@@ -3,7 +3,7 @@ package com.growlithe.uci.mysql.database.absenteeism.service
 import com.growlithe.uci.common.bean.CandyResult
 import com.growlithe.uci.mysql.database.absenteeism.dao.mapper.AbsenteeismAtWorkMapper
 import com.growlithe.uci.mysql.excel.utils.ExcelDataConfigure
-import com.growlithe.uci.mysql.excel.utils.ExcelDataUtils
+import com.growlithe.uci.mysql.excel.utils.ListDOFromExcelUtils
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
@@ -32,11 +32,12 @@ class AbsenteeismAtWorkService {
      * excel 旷工数据集 数据保存至数据库
      * @param multipartFile
      */
+    @Transactional
     fun save(multipartFile: MultipartFile): CandyResult<Void> {
         val candyResult = CandyResult<Void>()
 
         // 数据转换 Excel 旷工数据集的数据转换为 DO
-        val getDataMapFromExcelResult = ExcelDataUtils.getDataMapFromExcel(multipartFile, ExcelDataConfigure.ABSENTEEISM_DATA_NAME)
+        val getDataMapFromExcelResult = ListDOFromExcelUtils.getDataMapFromExcel(multipartFile, ExcelDataConfigure.ABSENTEEISM_DATA_NAME)
         if (!getDataMapFromExcelResult.isSuccess) {
             LOGGER.warn(getDataMapFromExcelResult.message)
             candyResult.message = getDataMapFromExcelResult.message
@@ -47,14 +48,14 @@ class AbsenteeismAtWorkService {
         val dataMap = getDataMapFromExcelResult.data
 
         // 将Excel转换的dataMap数据 变为 absenteeismAtWorkDOList
-        val getAbsenteeismAtWorkDOListFromDataMapResult = ExcelDataUtils.getAbsenteeismAtWorkDOListFromDataMap(dataMap!!)
-        if (!getAbsenteeismAtWorkDOListFromDataMapResult.isSuccess) {
-            LOGGER.warn(getAbsenteeismAtWorkDOListFromDataMapResult.message)
-            candyResult.message = getAbsenteeismAtWorkDOListFromDataMapResult.message
+        val listAbsenteeismAtWorkDOFromDataMapResult = ListDOFromExcelUtils.listAbsenteeismAtWorkDOFromDataMap(dataMap!!)
+        if (!listAbsenteeismAtWorkDOFromDataMapResult.isSuccess) {
+            LOGGER.warn(listAbsenteeismAtWorkDOFromDataMapResult.message)
+            candyResult.message = listAbsenteeismAtWorkDOFromDataMapResult.message
             return candyResult
         }
 
-        val absenteeismAtWorkList = getAbsenteeismAtWorkDOListFromDataMapResult.data
+        val absenteeismAtWorkList = listAbsenteeismAtWorkDOFromDataMapResult.data
 
         // 数据保存至数据库
         absenteeismAtWorkMapper.saveBatch(absenteeismAtWorkList)

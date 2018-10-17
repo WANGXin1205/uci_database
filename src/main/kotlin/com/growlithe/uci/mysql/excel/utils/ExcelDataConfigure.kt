@@ -17,6 +17,11 @@ object ExcelDataConfigure{
     val DEFAULT_BEGIN_ROW_INDEX = 0
 
     /**
+     * 转换为Excel行数所需要的值
+     */
+    val DEFAULT_ADD_ROW = 2
+
+    /**
      * 鲍鱼数据集 名称
      */
     val ABALONE_DATA_NAME = arrayOf("sex","length","diameter","height","wholeWeight",
@@ -67,14 +72,15 @@ object ExcelDataConfigure{
     /**
      * 旷工数据集 名称
      */
-    val ABSENTEEISM_DATA_NAME = arrayOf("id","originId","reasonForAbsence","monthOfAbsence",
+    val ABSENTEEISM_DATA_NAME = arrayOf("originId","reasonForAbsence","monthOfAbsence",
             "dayOfWeek","seasons","transportationExpense","distanceFromResidenceToWork","serviceTime",
             "age","workLoadAverageOfDay","hitTarget","disciplinaryFailure","education","son",
             "socialDrinker","socialSmoker","pet","weight","height","bodyMassIndex","absenteeismTimeInHours")
+
     /**
      * 旷工数据集 方法
      */
-    val ABSENTEEISM_DATA_METHOD = arrayOf("getId","getOriginId","getReasonForAbsence","getMonthOfAbsence",
+    val ABSENTEEISM_DATA_METHOD = arrayOf("getOriginId","getReasonForAbsence","getMonthOfAbsence",
             "getDayOfWeek","getSeasons","getTransportationExpense","getDistanceFromResidenceToWork","getServiceTime",
             "getAge","getWorkLoadAverageOfDay","getHitTarget","getDisciplinaryFailure","getEducation","getSon",
             "getSocialDrinker","getSocialSmoker","getPet","getWeight","getHeight","getBodyMassIndex","getAbsenteeismTimeInHours")
@@ -191,5 +197,96 @@ object ExcelDataConfigure{
      * 旷工数据集 矿工时间
      */
     val ABSENTEEISM_TIME_IN_HOURS_INDEX = 20
+
+    /**
+     * 人口数据集 名称
+     */
+    val ADULT_DATA_NAME = arrayOf("age","workclass","fnlwgt", "education","educationNum","maritalStatus", "occupation",
+            "relationship", "race","sex","capitalGain","capitalLoss","hoursPerWeek","nativeCountry", "attributes")
+
+    /**
+     * 人口数据集 方法
+     */
+    val ADULT_DATA_METHOD =  arrayOf("getAge","getWorkclass","getFnlwgt", "getEducation","getEducationNum","getMaritalStatus",
+            "getOccupation", "getRelationship", "getRace","getSex","getCapitalGain","getCapitalLoss","getHoursPerWeek",
+            "getNativeCountry", "getAttributes")
+
+
+    /**
+     * 人口数据集 年龄
+     */
+    val ADULT_AGE_INDEX = 0
+
+    /**
+     * 人口数据集 雇主的单位类型 存在缺失值
+     */
+    val ADULT_WORKCLASS_INDEX = 1
+
+    /**
+     * 人口数据集 人口普查员的ID，可以考虑去除
+     */
+    val ADULT_FNLWGT_INDEX = 2
+
+    /**
+     * 人口数据集 教育程度 可以考虑去除
+     */
+    val ADULT_EDUCATION_INDEX = 3
+
+    /**
+     * 人口数据集 最高教育水平数字表示
+     */
+    val ADULT_EDUCATION_NUM_INDEX = 4
+
+    /**
+     * 人口数据集 婚姻状态
+     */
+    val ADULT_MARITAL_STATUS_INDEX = 5
+
+    /**
+     * 人口数据集 工作类型 存在缺失值
+     */
+    val ADULT_OCCUPATION_INDEX = 6
+
+    /**
+     * 人口数据集 家庭关系
+     */
+    val ADULT_RELATIONSHIP_INDEX = 7
+
+    /**
+     * 人口数据集 种族
+     */
+    val ADULT_RACE_INDEX = 8
+
+    /**
+     * 人口数据集 性别
+     */
+    val ADULT_SEX_INDEX = 9
+
+    /**
+     * 人口数据集 资本收益记录
+     */
+    val ADULT_CAPITAL_GAIN_INDEX = 10
+
+    /**
+     * 人口数据集 资本损失记录
+     */
+    val ADULT_CAPITAL_LOSS_INDEX = 11
+
+    /**
+     * 人口数据集 一周工作时长
+     */
+    val ADULT_HOURS_PER_WEEK_INDEX = 12
+
+    /**
+     * 人口数据集 国籍 存在缺失值
+     */
+    val ADULT_NATIVE_COUNTRY_INDEX = 13
+
+    /**
+     * 人口数据集 收入高低属性 存在缺失值
+     */
+    val ADULT_INCOME_ATTRIBUTES_INDEX = 14
+
+
 
 }

@@ -3,7 +3,7 @@ package com.growlithe.uci.mysql.database.abalone.service
 import com.growlithe.uci.common.bean.CandyResult
 import com.growlithe.uci.mysql.database.abalone.dao.mapper.AbaloneMapper
 import com.growlithe.uci.mysql.excel.utils.ExcelDataConfigure
-import com.growlithe.uci.mysql.excel.utils.ExcelDataUtils
+import com.growlithe.uci.mysql.excel.utils.ListDOFromExcelUtils
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
@@ -30,13 +30,15 @@ class AbaloneService {
 
     /**
      * excel 鲍鱼数据集 数据保存至数据库
+     *
      * @param multipartFile
      */
+    @Transactional
     fun save(multipartFile: MultipartFile): CandyResult<Void> {
         val candyResult = CandyResult<Void>()
 
         // 数据转换 Excel 鲍鱼数据集的数据转换为 DO
-        val getDataMapFromExcelResult = ExcelDataUtils.getDataMapFromExcel(multipartFile, ExcelDataConfigure.ABALONE_DATA_NAME)
+        val getDataMapFromExcelResult = ListDOFromExcelUtils.getDataMapFromExcel(multipartFile, ExcelDataConfigure.ABALONE_DATA_NAME)
         if (!getDataMapFromExcelResult.isSuccess) {
             LOGGER.warn(getDataMapFromExcelResult.message)
             candyResult.message = getDataMapFromExcelResult.message
@@ -47,14 +49,14 @@ class AbaloneService {
         val dataMap = getDataMapFromExcelResult.data
 
         // 将Excel转换的dataMap数据 变为 abaloneDOList
-        val getAbaloneDOListFromDataMapResult = ExcelDataUtils.getAbaloneDOListFromDataMap(dataMap!!)
-        if (!getAbaloneDOListFromDataMapResult.isSuccess) {
-            LOGGER.warn(getAbaloneDOListFromDataMapResult.message)
-            candyResult.message = getAbaloneDOListFromDataMapResult.message
+        val listAbaloneDOFromDataMapResult = ListDOFromExcelUtils.listAbaloneDOFromDataMap(dataMap!!)
+        if (!listAbaloneDOFromDataMapResult.isSuccess) {
+            LOGGER.warn(listAbaloneDOFromDataMapResult.message)
+            candyResult.message = listAbaloneDOFromDataMapResult.message
             return candyResult
         }
 
-        val abaloneDOList = getAbaloneDOListFromDataMapResult.data
+        val abaloneDOList = listAbaloneDOFromDataMapResult.data
 
         // 数据保存至数据库
         abaloneMapper.saveBatch(abaloneDOList)

@@ -9,3 +9,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;项目搭建，并且增加abalone和
 absenteeismAtWork两个数据集的保存和查询所有数据的方法。
 
+## 2018.10.17  
+&nbsp;&nbsp;&nbsp;&nbsp;规范了代码中函数命名，增加了
+Adult数据集的保存和查询所有数据的方法。
