@@ -1,120 +1,176 @@
-2018-10-17 15:04:08.632  INFO 4569 --- [main] c.g.u.m.d.a.d.mapper.AbaloneMapperTest   : Starting AbaloneMapperTest on wangxindeMacBook-Pro.local with PID 4569 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 15:04:08.639  INFO 4569 --- [main] c.g.u.m.d.a.d.mapper.AbaloneMapperTest   : The following profiles are active: dev
-2018-10-17 15:04:08.660  INFO 4569 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61d9efe0: startup date [Wed Oct 17 15:04:08 CST 2018]; root of context hierarchy
-2018-10-17 15:04:11.046  INFO 4569 --- [main] c.g.u.m.d.a.d.mapper.AbaloneMapperTest   : Started AbaloneMapperTest in 3.181 seconds (JVM running for 4.777)
-2018-10-17 15:04:11.161  INFO 4569 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@61d9efe0: startup date [Wed Oct 17 15:04:08 CST 2018]; root of context hierarchy
-2018-10-17 15:04:36.699  INFO 4574 --- [main] c.g.u.m.d.a.d.mapper.AbaloneMapperTest   : Starting AbaloneMapperTest on wangxindeMacBook-Pro.local with PID 4574 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 15:04:36.701  INFO 4574 --- [main] c.g.u.m.d.a.d.mapper.AbaloneMapperTest   : The following profiles are active: dev
-2018-10-17 15:04:36.723  INFO 4574 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f4854d6: startup date [Wed Oct 17 15:04:36 CST 2018]; root of context hierarchy
-2018-10-17 15:04:39.187  INFO 4574 --- [main] c.g.u.m.d.a.d.mapper.AbaloneMapperTest   : Started AbaloneMapperTest in 3.179 seconds (JVM running for 4.319)
-2018-10-17 15:04:39.277  INFO 4574 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f4854d6: startup date [Wed Oct 17 15:04:36 CST 2018]; root of context hierarchy
-2018-10-17 20:41:59.648  INFO 4919 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4919 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:41:59.649  INFO 4919 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:41:59.672  INFO 4919 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@11389053: startup date [Wed Oct 17 20:41:59 CST 2018]; root of context hierarchy
-2018-10-17 20:42:02.334  INFO 4919 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 3.524 seconds (JVM running for 5.007)
-2018-10-17 20:42:02.452  INFO 4919 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:42:02.732  INFO 4919 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:42:05.233  INFO 4919 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-2018-10-17 20:42:05.272  INFO 4919 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-2018-10-17 20:42:05.316  INFO 4919 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@11389053: startup date [Wed Oct 17 20:41:59 CST 2018]; root of context hierarchy
-2018-10-17 20:42:05.319  INFO 4919 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:42:05.329  INFO 4919 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 20:43:17.641  INFO 4924 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4924 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:43:17.642  INFO 4924 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:43:17.664  INFO 4924 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:43:17 CST 2018]; root of context hierarchy
-2018-10-17 20:43:19.804  INFO 4924 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 2.69 seconds (JVM running for 3.802)
-2018-10-17 20:43:19.891  INFO 4924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:43:20.174  INFO 4924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:43:22.580  INFO 4924 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-2018-10-17 20:43:22.619  INFO 4924 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-2018-10-17 20:43:22.669  INFO 4924 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:43:17 CST 2018]; root of context hierarchy
-2018-10-17 20:43:22.673  INFO 4924 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:43:22.689  INFO 4924 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 20:44:41.465  INFO 4938 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4938 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:44:41.466  INFO 4938 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:44:41.489  INFO 4938 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:44:41 CST 2018]; root of context hierarchy
-2018-10-17 20:44:43.695  INFO 4938 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 3.121 seconds (JVM running for 4.505)
-2018-10-17 20:44:43.784  INFO 4938 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:44:44.036  INFO 4938 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:44:46.290  INFO 4938 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-2018-10-17 20:44:46.328  INFO 4938 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-2018-10-17 20:44:46.379  INFO 4938 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:44:41 CST 2018]; root of context hierarchy
-2018-10-17 20:44:46.383  INFO 4938 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:44:46.399  INFO 4938 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 20:45:07.946  INFO 4941 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4941 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:45:07.947  INFO 4941 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:45:07.963  INFO 4941 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:45:07 CST 2018]; root of context hierarchy
-2018-10-17 20:45:10.112  INFO 4941 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 2.743 seconds (JVM running for 3.838)
-2018-10-17 20:45:10.194  INFO 4941 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:45:10.464  INFO 4941 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:45:12.752  INFO 4941 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:45:07 CST 2018]; root of context hierarchy
-2018-10-17 20:45:12.757  INFO 4941 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:45:12.771  INFO 4941 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 20:52:40.225  INFO 4947 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4947 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:52:40.226  INFO 4947 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:52:40.243  INFO 4947 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:52:40 CST 2018]; root of context hierarchy
-2018-10-17 20:52:42.437  INFO 4947 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 2.841 seconds (JVM running for 3.912)
-2018-10-17 20:52:42.522  INFO 4947 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:52:42.777  INFO 4947 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:52:45.300  INFO 4947 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:52:40 CST 2018]; root of context hierarchy
-2018-10-17 20:52:45.306  INFO 4947 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:52:45.321  INFO 4947 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 20:55:13.499  INFO 4953 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4953 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:55:13.500  INFO 4953 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:55:13.518  INFO 4953 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:55:13 CST 2018]; root of context hierarchy
-2018-10-17 20:55:15.553  INFO 4953 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 2.879 seconds (JVM running for 4.09)
-2018-10-17 20:55:15.635  INFO 4953 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:55:15.887  INFO 4953 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:55:18.549  INFO 4953 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-2018-10-17 20:55:18.583  INFO 4953 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-2018-10-17 20:55:18.631  INFO 4953 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:55:13 CST 2018]; root of context hierarchy
-2018-10-17 20:55:18.635  INFO 4953 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:55:18.646  INFO 4953 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 20:56:28.267  INFO 4956 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4956 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:56:28.268  INFO 4956 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:56:28.285  INFO 4956 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:56:28 CST 2018]; root of context hierarchy
-2018-10-17 20:56:30.564  INFO 4956 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 2.866 seconds (JVM running for 4.137)
-2018-10-17 20:56:30.653  INFO 4956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:56:30.895  INFO 4956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:56:33.128  INFO 4956 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-2018-10-17 20:56:33.166  INFO 4956 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
-2018-10-17 20:56:33.205  INFO 4956 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:56:28 CST 2018]; root of context hierarchy
-2018-10-17 20:56:33.211  INFO 4956 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:56:33.221  INFO 4956 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 20:57:19.468  INFO 4963 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4963 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:57:19.469  INFO 4963 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:57:19.497  INFO 4963 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:57:19 CST 2018]; root of context hierarchy
-2018-10-17 20:57:21.746  INFO 4963 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 2.919 seconds (JVM running for 4.094)
-2018-10-17 20:57:21.829  INFO 4963 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:57:22.098  INFO 4963 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:57:24.854  INFO 4963 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:57:19 CST 2018]; root of context hierarchy
-2018-10-17 20:57:24.857  INFO 4963 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:57:24.873  INFO 4963 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 20:57:41.531  INFO 4966 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 4966 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 20:57:41.532  INFO 4966 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 20:57:41.552  INFO 4966 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:57:41 CST 2018]; root of context hierarchy
-2018-10-17 20:57:43.818  INFO 4966 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 2.898 seconds (JVM running for 4.072)
-2018-10-17 20:57:43.909  INFO 4966 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 20:57:44.158  INFO 4966 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 20:57:47.470  WARN 4966 --- [main] c.g.u.m.d.adult.service.AdultService     : 第 6352 行中10is not int
-2018-10-17 20:57:47.489  INFO 4966 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 20:57:41 CST 2018]; root of context hierarchy
-2018-10-17 20:57:47.494  INFO 4966 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 20:57:47.512  INFO 4966 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 22:00:38.122  INFO 5131 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 5131 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 22:00:38.124  INFO 5131 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 22:00:38.139  INFO 5131 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 22:00:38 CST 2018]; root of context hierarchy
-2018-10-17 22:00:40.404  INFO 5131 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 3.018 seconds (JVM running for 4.371)
-2018-10-17 22:00:40.532  INFO 5131 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 22:00:40.827  INFO 5131 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 22:00:51.197  INFO 5131 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 22:00:38 CST 2018]; root of context hierarchy
-2018-10-17 22:00:51.202  INFO 5131 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 22:00:51.217  INFO 5131 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-10-17 22:00:56.893  INFO 5134 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Starting AdultServiceTest on wangxindeMacBook-Pro.local with PID 5134 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
-2018-10-17 22:00:56.894  INFO 5134 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : The following profiles are active: dev
-2018-10-17 22:00:56.911  INFO 5134 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 22:00:56 CST 2018]; root of context hierarchy
-2018-10-17 22:00:59.295  INFO 5134 --- [main] c.g.u.m.d.a.service.AdultServiceTest     : Started AdultServiceTest in 2.979 seconds (JVM running for 4.247)
-2018-10-17 22:00:59.426  INFO 5134 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-10-17 22:00:59.705  INFO 5134 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-10-17 22:01:04.535  INFO 5134 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5db99216: startup date [Wed Oct 17 22:00:56 CST 2018]; root of context hierarchy
-2018-10-17 22:01:04.539  INFO 5134 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-10-17 22:01:04.554  INFO 5134 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:19:12.774  INFO 9304 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9304 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:19:12.790  INFO 9304 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:19:12.853  INFO 9304 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 17:19:12 CST 2018]; root of context hierarchy
+2018-10-18 17:19:15.320  INFO 9304 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.395 seconds (JVM running for 4.783)
+2018-10-18 17:19:15.442  INFO 9304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:19:15.691  INFO 9304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:19:19.936  WARN 9304 --- [main] c.g.u.m.d.a.service.AnuranCallsService   : 第 2 行中,第9列 is not num
+2018-10-18 17:19:19.954  INFO 9304 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 17:19:12 CST 2018]; root of context hierarchy
+2018-10-18 17:19:19.957  INFO 9304 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:19:19.973  INFO 9304 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:19:51.901  INFO 9309 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9309 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:19:51.902  INFO 9309 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:19:51.921  INFO 9309 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5dda14d0: startup date [Thu Oct 18 17:19:51 CST 2018]; root of context hierarchy
+2018-10-18 17:19:54.404  INFO 9309 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.097 seconds (JVM running for 4.861)
+2018-10-18 17:19:54.524  INFO 9309 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:19:54.804  INFO 9309 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:19:59.761  WARN 9309 --- [main] c.g.u.m.d.a.service.AnuranCallsService   : 第 2 行中,第9列 is not num
+2018-10-18 17:19:59.787  INFO 9309 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5dda14d0: startup date [Thu Oct 18 17:19:51 CST 2018]; root of context hierarchy
+2018-10-18 17:19:59.792  INFO 9309 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:19:59.807  INFO 9309 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:20:34.326  INFO 9312 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9312 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:20:34.328  INFO 9312 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:20:34.351  INFO 9312 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:20:34 CST 2018]; root of context hierarchy
+2018-10-18 17:20:36.775  INFO 9312 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.023 seconds (JVM running for 4.481)
+2018-10-18 17:20:39.467  INFO 9312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:20:39.746  INFO 9312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:20:45.062  WARN 9312 --- [main] c.g.u.m.d.a.service.AnuranCallsService   : 第 2 行中,第9列 is not num
+2018-10-18 17:20:45.086  INFO 9312 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:20:34 CST 2018]; root of context hierarchy
+2018-10-18 17:20:45.093  INFO 9312 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:20:45.110  INFO 9312 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:20:57.926  INFO 9316 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9316 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:20:57.927  INFO 9316 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:20:57.954  INFO 9316 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5dda14d0: startup date [Thu Oct 18 17:20:57 CST 2018]; root of context hierarchy
+2018-10-18 17:21:01.988  INFO 9316 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 4.833 seconds (JVM running for 6.333)
+2018-10-18 17:21:04.502  INFO 9316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:21:05.875  INFO 9316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:28:28.063  INFO 9316 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5dda14d0: startup date [Thu Oct 18 17:20:57 CST 2018]; root of context hierarchy
+2018-10-18 17:28:28.070  INFO 9316 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:28:28.094  INFO 9316 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:28:42.919  INFO 9323 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9323 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:28:42.920  INFO 9323 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:28:42.946  INFO 9323 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 17:28:42 CST 2018]; root of context hierarchy
+2018-10-18 17:28:45.205  INFO 9323 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.038 seconds (JVM running for 4.371)
+2018-10-18 17:28:45.300  INFO 9323 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:28:45.576  INFO 9323 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:28:49.694  WARN 9323 --- [main] c.g.u.m.d.a.service.AnuranCallsService   : 第 2 行中,第9列 is not num
+2018-10-18 17:28:49.713  INFO 9323 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 17:28:42 CST 2018]; root of context hierarchy
+2018-10-18 17:28:49.717  INFO 9323 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:28:49.731  INFO 9323 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:29:20.703  INFO 9327 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9327 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:29:20.705  INFO 9327 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:29:20.734  INFO 9327 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:29:20 CST 2018]; root of context hierarchy
+2018-10-18 17:29:23.308  INFO 9327 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.219 seconds (JVM running for 4.752)
+2018-10-18 17:29:26.201  INFO 9327 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:29:26.488  INFO 9327 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:29:50.446  WARN 9327 --- [main] c.g.u.m.d.a.service.AnuranCallsService   : 第 2 行中,第9列 is not num
+2018-10-18 17:29:50.474  INFO 9327 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:29:20 CST 2018]; root of context hierarchy
+2018-10-18 17:29:50.480  INFO 9327 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:29:50.490  INFO 9327 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:29:53.943  INFO 9330 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9330 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:29:53.944  INFO 9330 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:29:53.969  INFO 9330 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:29:53 CST 2018]; root of context hierarchy
+2018-10-18 17:29:56.717  INFO 9330 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.447 seconds (JVM running for 5.66)
+2018-10-18 17:29:59.189  INFO 9330 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:29:59.492  INFO 9330 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:30:38.091  WARN 9330 --- [main] c.g.u.m.d.a.service.AnuranCallsService   : 第 2 行中,第9列 is not num
+2018-10-18 17:30:38.118  INFO 9330 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:29:53 CST 2018]; root of context hierarchy
+2018-10-18 17:30:38.123  INFO 9330 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:30:38.133  INFO 9330 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:30:42.477  INFO 9337 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9337 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:30:42.478  INFO 9337 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:30:42.500  INFO 9337 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:30:42 CST 2018]; root of context hierarchy
+2018-10-18 17:30:45.571  INFO 9337 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.772 seconds (JVM running for 5.356)
+2018-10-18 17:30:47.926  INFO 9337 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:30:48.219  INFO 9337 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:31:44.126  WARN 9337 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s804ms).
+2018-10-18 17:32:56.208  WARN 9337 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s82ms).
+2018-10-18 17:32:56.209  WARN 9337 --- [main] c.g.u.m.d.a.service.AnuranCallsService   : 第 2 行中,第9列 is not num
+2018-10-18 17:32:56.230  INFO 9337 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:30:42 CST 2018]; root of context hierarchy
+2018-10-18 17:32:56.233  INFO 9337 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:32:56.242  INFO 9337 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 17:33:01.849  INFO 9341 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9341 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 17:33:01.850  INFO 9341 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 17:33:01.873  INFO 9341 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:33:01 CST 2018]; root of context hierarchy
+2018-10-18 17:33:04.256  INFO 9341 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.006 seconds (JVM running for 4.598)
+2018-10-18 17:33:12.633  INFO 9341 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 17:33:12.928  INFO 9341 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 17:33:23.506  INFO 9341 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-18 17:33:23.549  INFO 9341 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-18 17:33:23.567  INFO 9341 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 17:33:01 CST 2018]; root of context hierarchy
+2018-10-18 17:33:23.570  INFO 9341 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 17:33:23.579  INFO 9341 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 18:29:15.228  INFO 9384 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9384 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 18:29:15.230  INFO 9384 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 18:29:15.248  INFO 9384 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 18:29:15 CST 2018]; root of context hierarchy
+2018-10-18 18:29:17.508  INFO 9384 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.023 seconds (JVM running for 4.379)
+2018-10-18 18:29:17.638  INFO 9384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 18:29:17.888  INFO 9384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 18:29:22.718  INFO 9384 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-18 18:29:22.755  INFO 9384 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-18 18:29:22.771  INFO 9384 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 18:29:15 CST 2018]; root of context hierarchy
+2018-10-18 18:29:22.775  INFO 9384 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 18:29:22.791  INFO 9384 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 22:13:05.212  INFO 9544 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9544 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 22:13:05.213  INFO 9544 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 22:13:05.229  INFO 9544 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 22:13:05 CST 2018]; root of context hierarchy
+2018-10-18 22:13:08.210  INFO 9544 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.626 seconds (JVM running for 4.821)
+2018-10-18 22:13:08.378  INFO 9544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 22:13:08.756  INFO 9544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 22:13:14.415  INFO 9544 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-18 22:13:14.472  INFO 9544 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-18 22:13:14.495  INFO 9544 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 22:13:05 CST 2018]; root of context hierarchy
+2018-10-18 22:13:14.499  INFO 9544 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 22:13:14.509  INFO 9544 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 22:14:43.862  INFO 9553 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9553 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 22:14:43.863  INFO 9553 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 22:14:43.882  INFO 9553 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 22:14:43 CST 2018]; root of context hierarchy
+2018-10-18 22:14:46.234  INFO 9553 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 2.914 seconds (JVM running for 4.012)
+2018-10-18 22:14:46.324  INFO 9553 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 22:14:46.547  INFO 9553 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 22:14:51.079  INFO 9553 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-18 22:14:51.119  INFO 9553 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-18 22:14:51.134  INFO 9553 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 22:14:43 CST 2018]; root of context hierarchy
+2018-10-18 22:14:51.139  INFO 9553 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 22:14:51.152  INFO 9553 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 22:18:59.938  INFO 9568 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9568 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 22:18:59.939  INFO 9568 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 22:18:59.971  INFO 9568 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 22:18:59 CST 2018]; root of context hierarchy
+2018-10-18 22:19:03.230  INFO 9568 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 3.978 seconds (JVM running for 5.603)
+2018-10-18 22:19:03.377  INFO 9568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 22:19:03.675  INFO 9568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 22:19:34.758  INFO 9568 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@282308c3: startup date [Thu Oct 18 22:18:59 CST 2018]; root of context hierarchy
+2018-10-18 22:19:34.764  INFO 9568 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 22:19:34.783  INFO 9568 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 22:19:41.458  INFO 9572 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9572 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 22:19:41.459  INFO 9572 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 22:19:41.482  INFO 9572 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5dda14d0: startup date [Thu Oct 18 22:19:41 CST 2018]; root of context hierarchy
+2018-10-18 22:19:44.790  INFO 9572 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 4.025 seconds (JVM running for 5.383)
+2018-10-18 22:19:44.928  INFO 9572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 22:19:45.237  INFO 9572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 22:20:14.839  INFO 9572 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-18 22:20:14.880  INFO 9572 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-18 22:20:14.972  INFO 9572 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5dda14d0: startup date [Thu Oct 18 22:19:41 CST 2018]; root of context hierarchy
+2018-10-18 22:20:14.981  INFO 9572 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 22:20:14.991  INFO 9572 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 22:23:10.706  INFO 9583 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9583 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 22:23:10.708  INFO 9583 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 22:23:10.728  INFO 9583 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 22:23:10 CST 2018]; root of context hierarchy
+2018-10-18 22:23:12.821  INFO 9583 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 2.77 seconds (JVM running for 3.997)
+2018-10-18 22:23:12.915  INFO 9583 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 22:23:13.156  INFO 9583 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 22:23:19.434  INFO 9583 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-18 22:23:19.476  INFO 9583 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-18 22:23:19.567  INFO 9583 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 22:23:10 CST 2018]; root of context hierarchy
+2018-10-18 22:23:19.571  INFO 9583 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 22:23:19.581  INFO 9583 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 23:03:36.259  INFO 9642 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9642 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 23:03:36.260  INFO 9642 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 23:03:36.277  INFO 9642 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 23:03:36 CST 2018]; root of context hierarchy
+2018-10-18 23:03:38.516  INFO 9642 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 2.996 seconds (JVM running for 4.21)
+2018-10-18 23:03:38.643  INFO 9642 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 23:03:38.921  INFO 9642 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 23:03:47.128  INFO 9642 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-18 23:03:47.171  INFO 9642 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-18 23:03:47.256  INFO 9642 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 23:03:36 CST 2018]; root of context hierarchy
+2018-10-18 23:03:47.260  INFO 9642 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 23:03:47.270  INFO 9642 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 23:05:23.633  INFO 9647 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Starting AnuranCallsServiceTest on wangxindeMacBook-Pro.local with PID 9647 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 23:05:23.634  INFO 9647 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : The following profiles are active: dev
+2018-10-18 23:05:23.654  INFO 9647 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 23:05:23 CST 2018]; root of context hierarchy
+2018-10-18 23:05:25.910  INFO 9647 --- [main] c.g.u.m.d.a.s.AnuranCallsServiceTest     : Started AnuranCallsServiceTest in 2.866 seconds (JVM running for 4.098)
+2018-10-18 23:05:26.045  INFO 9647 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 23:05:26.335  INFO 9647 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 23:05:33.362  INFO 9647 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 23:05:23 CST 2018]; root of context hierarchy
+2018-10-18 23:05:33.365  INFO 9647 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 23:05:33.378  INFO 9647 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

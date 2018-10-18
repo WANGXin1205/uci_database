@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.growlithe.uci.mysql.database.anurancalls.dao.mapper.AnuranCallsMapper">
+
+    <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.anurancalls.dao.domain.AnuranCallsDO">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="mfccs_a" property="mfccsA" jdbcType="DECIMAL"/>
+        <result column="mfccs_b" property="mfccsB" jdbcType="DECIMAL"/>
+        <result column="mfccs_c" property="mfccsC" jdbcType="DECIMAL"/>
+        <result column="mfccs_d" property="mfccsD" jdbcType="DECIMAL"/>
+        <result column="mfccs_e" property="mfccsE" jdbcType="DECIMAL"/>
+        <result column="mfccs_f" property="mfccsF" jdbcType="DECIMAL"/>
+        <result column="mfccs_g" property="mfccsG" jdbcType="DECIMAL"/>
+        <result column="mfccs_h" property="mfccsH" jdbcType="DECIMAL"/>
+        <result column="mfccs_i" property="mfccsI" jdbcType="DECIMAL"/>
+        <result column="mfccs_j" property="mfccsJ" jdbcType="DECIMAL"/>
+        <result column="mfccs_k" property="mfccsK" jdbcType="DECIMAL"/>
+        <result column="mfccs_l" property="mfccsL" jdbcType="DECIMAL"/>
+        <result column="mfccs_m" property="mfccsM" jdbcType="DECIMAL"/>
+        <result column="mfccs_n" property="mfccsN" jdbcType="DECIMAL"/>
+        <result column="mfccs_o" property="mfccsO" jdbcType="DECIMAL"/>
+        <result column="mfccs_p" property="mfccsP" jdbcType="DECIMAL"/>
+        <result column="mfccs_q" property="mfccsQ" jdbcType="DECIMAL"/>
+        <result column="mfccs_r" property="mfccsR" jdbcType="DECIMAL"/>
+        <result column="mfccs_s" property="mfccsS" jdbcType="DECIMAL"/>
+        <result column="mfccs_t" property="mfccsT" jdbcType="DECIMAL"/>
+        <result column="mfccs_u" property="mfccsU" jdbcType="DECIMAL"/>
+        <result column="mfccs_v" property="mfccsV" jdbcType="DECIMAL"/>
+        <result column="family" property="family" jdbcType="VARCHAR"/>
+        <result column="genus" property="genus" jdbcType="VARCHAR"/>
+        <result column="species" property="species" jdbcType="VARCHAR"/>
+        <result column="record_id" property="recordId" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="base_property">
+    id, <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    mfccs_a, mfccs_b, mfccs_c, mfccs_d, mfccs_e, mfccs_f, mfccs_g, mfccs_h, mfccs_i,
+    mfccs_j, mfccs_k, mfccs_l, mfccs_m, mfccs_n, mfccs_o,
+    mfccs_p, mfccs_q, mfccs_r, mfccs_s, mfccs_t, mfccs_u, mfccs_v,
+    family, genus, species, record_id, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.anuran_calls
+        where status = 1
+    </select>
+
+    <insert id="saveBatch" parameterType="java.util.List"  useGeneratedKeys="true" keyProperty="id">
+        insert into
+        uci_database.anuran_calls(<include refid="save_property"/>)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.mfccsA},#{item.mfccsB},#{item.mfccsC}, #{item.mfccsD},
+            #{item.mfccsE},#{item.mfccsF},#{item.mfccsG},
+            #{item.mfccsH},#{item.mfccsI},#{item.mfccsJ},#{item.mfccsK},
+            #{item.mfccsL},#{item.mfccsM},#{item.mfccsN},#{item.mfccsO},
+            #{item.mfccsP},#{item.mfccsQ},#{item.mfccsR},#{item.mfccsS},#{item.mfccsT},
+            #{item.mfccsU},#{item.mfccsV},#{item.family},#{item.genus},#{item.species},
+            #{item.recordId},1)
+        </foreach>
+    </insert>
+
+</mapper>

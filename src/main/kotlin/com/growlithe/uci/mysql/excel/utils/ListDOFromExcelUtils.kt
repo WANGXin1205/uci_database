@@ -4,6 +4,7 @@ import com.growlithe.uci.common.bean.CandyResult
 import com.growlithe.uci.mysql.database.abalone.dao.domain.AbaloneDO
 import com.growlithe.uci.mysql.database.absenteeism.dao.domain.AbsenteeismAtWorkDO
 import com.growlithe.uci.mysql.database.adult.dao.domain.AdultDO
+import com.growlithe.uci.mysql.database.anurancalls.dao.domain.AnuranCallsDO
 import com.growlithe.uci.mysql.excel.utils.enums.DataType
 import com.growlithe.uci.utils.POIUtils
 import org.springframework.web.multipart.MultipartFile
@@ -286,6 +287,7 @@ object ListDOFromExcelUtils {
     /**
      * 从dataMap 转换成 人口 数据
      *
+     * @param dataType
      * @param dataMap
      */
     fun listAdultDOFromDataMap(dataType: DataType,dataMap: Map<Int, Array<String>>): CandyResult<MutableList<AdultDO>> {
@@ -359,4 +361,173 @@ object ListDOFromExcelUtils {
         candyResult.isSuccess = true
         return candyResult
     }
+
+    /**
+     * 从dataMap 转换成 无尾目类动物叫声数据集 数据
+     *
+     * @param dataMap
+     */
+    fun listAnuranCallsDOFromDataMap(dataMap: Map<Int, Array<String>>): CandyResult<MutableList<AnuranCallsDO>> {
+        val candyResult = CandyResult<MutableList<AnuranCallsDO>>()
+
+        val anuranCallsDOList = mutableListOf<AnuranCallsDO>()
+
+        for (index: Int in dataMap.keys) {
+            val anuranCallsDO = AnuranCallsDO()
+            val data = dataMap[index]!!
+            val realIndex = index + ExcelDataConfigure.DEFAULT_ADD_ROW
+
+            try {
+                anuranCallsDO.mfccsA = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_A_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_A_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsB = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_B_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_B_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsC = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_C_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_C_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsD = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_D_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_D_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsE = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_E_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_E_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsF = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_F_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_F_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsG = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_G_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_G_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsH = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_H_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_H_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsI = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_I_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_I_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsJ = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_J_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_J_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsK = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_K_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_K_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsL = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_L_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_L_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsM = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_M_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_M_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsN = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_N_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_N_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsO = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_O_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_O_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsP = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_P_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_P_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsQ = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_Q_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_Q_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsR = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_R_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_R_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsS = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_S_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_S_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsT = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_T_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_T_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsU = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_U_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_U_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                anuranCallsDO.mfccsV = data[ExcelDataConfigure.ANURAN_CALLS_MFCCS_V_INDEX].toBigDecimal()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_MFCCS_V_INDEX + "列 is not num"
+                return candyResult
+            }
+
+            anuranCallsDO.family = data[ExcelDataConfigure.ANURAN_CALLS_FAMILY_INDEX]
+            anuranCallsDO.genus = data[ExcelDataConfigure.ANURAN_CALLS_GENUS_INDEX]
+            anuranCallsDO.species = data[ExcelDataConfigure.ANURAN_CALLS_SPECIES_INDEX]
+
+            try {
+                anuranCallsDO.recordId = data[ExcelDataConfigure.ANURAN_CALLS_RECORD_ID_INDEX].toInt()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.ANURAN_CALLS_RECORD_ID_INDEX + "列 is not num"
+                return candyResult
+            }
+
+            anuranCallsDOList.add(anuranCallsDO)
+        }
+
+        candyResult.data = anuranCallsDOList
+        candyResult.isSuccess = true
+        return candyResult
+    }
+
+
 }

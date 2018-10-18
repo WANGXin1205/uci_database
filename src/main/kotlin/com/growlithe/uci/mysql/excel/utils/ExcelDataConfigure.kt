@@ -287,6 +287,48 @@ object ExcelDataConfigure{
      */
     val ADULT_INCOME_ATTRIBUTES_INDEX = 14
 
+    /**
+     * 无尾目类动物叫声数据集 名称
+     */
+    val ANURAN_CALLS_DATA_NAME = arrayOf("mfccsA","mfccsB","mfccsC", "mfccsD","mfccsE","mfccsF", "mfccsG",
+            "mfccsH", "mfccsI","mfccsJ","mfccsK","mfccsL","mfccsM","mfccsN", "mfccsO","mfccsP","mfccsQ",
+            "mfccsR","mfccsS","mfccsT","mfccsU","mfccsV","family","genus","species","recordId")
+    /**
+     * 无尾目类动物叫声数据集 方法
+     */
+    val ANURAN_CALLS_DATA_METHOD = arrayOf("getMfccsA","getMfccsB","getMfccsC", "getMfccsD","getMfccsE","getMfccsF",
+            "getMfccsG", "getMfccsH", "getMfccsI","getMfccsJ","getMfccsK","getMfccsL","getMfccsM","getMfccsN",
+            "getMfccsO","getMfccsP","getMfccsQ", "getMfccsR","getMfccsS","getMfccsT","getMfccsU","getMfccsV",
+            "getFamily","getGenus","getSpecies","getRecordId")
 
+    /**
+     * mfccsA-V
+     */
+    val ANURAN_CALLS_MFCCS_A_INDEX = 0
+    val ANURAN_CALLS_MFCCS_B_INDEX = 1
+    val ANURAN_CALLS_MFCCS_C_INDEX = 2
+    val ANURAN_CALLS_MFCCS_D_INDEX = 3
+    val ANURAN_CALLS_MFCCS_E_INDEX = 4
+    val ANURAN_CALLS_MFCCS_F_INDEX = 5
+    val ANURAN_CALLS_MFCCS_G_INDEX = 6
+    val ANURAN_CALLS_MFCCS_H_INDEX = 7
+    val ANURAN_CALLS_MFCCS_I_INDEX = 8
+    val ANURAN_CALLS_MFCCS_J_INDEX = 9
+    val ANURAN_CALLS_MFCCS_K_INDEX = 10
+    val ANURAN_CALLS_MFCCS_L_INDEX = 11
+    val ANURAN_CALLS_MFCCS_M_INDEX = 12
+    val ANURAN_CALLS_MFCCS_N_INDEX = 13
+    val ANURAN_CALLS_MFCCS_O_INDEX = 14
+    val ANURAN_CALLS_MFCCS_P_INDEX = 15
+    val ANURAN_CALLS_MFCCS_Q_INDEX = 16
+    val ANURAN_CALLS_MFCCS_R_INDEX = 17
+    val ANURAN_CALLS_MFCCS_S_INDEX = 18
+    val ANURAN_CALLS_MFCCS_T_INDEX = 19
+    val ANURAN_CALLS_MFCCS_U_INDEX = 20
+    val ANURAN_CALLS_MFCCS_V_INDEX = 21
+    val ANURAN_CALLS_FAMILY_INDEX = 22
+    val ANURAN_CALLS_GENUS_INDEX = 23
+    val ANURAN_CALLS_SPECIES_INDEX = 24
+    val ANURAN_CALLS_RECORD_ID_INDEX = 25
 
 }
