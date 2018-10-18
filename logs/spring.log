@@ -174,3 +174,12 @@
 2018-10-18 23:05:33.362  INFO 9647 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@538613b3: startup date [Thu Oct 18 23:05:23 CST 2018]; root of context hierarchy
 2018-10-18 23:05:33.365  INFO 9647 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-10-18 23:05:33.378  INFO 9647 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 23:13:17.295  INFO 9690 --- [main] c.g.u.m.d.a.d.m.AnuranCallsMapperTest    : Starting AnuranCallsMapperTest on wangxindeMacBook-Pro.local with PID 9690 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-18 23:13:17.296  INFO 9690 --- [main] c.g.u.m.d.a.d.m.AnuranCallsMapperTest    : The following profiles are active: dev
+2018-10-18 23:13:17.317  INFO 9690 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6de54b40: startup date [Thu Oct 18 23:13:17 CST 2018]; root of context hierarchy
+2018-10-18 23:13:20.196  INFO 9690 --- [main] c.g.u.m.d.a.d.m.AnuranCallsMapperTest    : Started AnuranCallsMapperTest in 3.616 seconds (JVM running for 4.771)
+2018-10-18 23:13:20.295  INFO 9690 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 23:13:20.558  INFO 9690 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 23:13:21.138  INFO 9690 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6de54b40: startup date [Thu Oct 18 23:13:17 CST 2018]; root of context hierarchy
+2018-10-18 23:13:21.142  INFO 9690 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 23:13:21.160  INFO 9690 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

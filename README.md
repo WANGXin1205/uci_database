@@ -12,3 +12,7 @@ absenteeismAtWork两个数据集的保存和查询所有数据的方法。
 ## 2018.10.17  
 &nbsp;&nbsp;&nbsp;&nbsp;规范了代码中函数命名，增加了
 Adult数据集的保存和查询所有数据的方法。
+
+## 2018.10.18  
+&nbsp;&nbsp;&nbsp;&nbsp; 增加数据集anuran_calls的
+查询和保存。同时使用navicat导入cvs,建表效率提升。
