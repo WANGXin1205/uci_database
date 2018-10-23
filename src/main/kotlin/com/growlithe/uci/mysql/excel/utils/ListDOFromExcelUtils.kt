@@ -1,12 +1,15 @@
 package com.growlithe.uci.mysql.excel.utils
 
 import com.growlithe.uci.common.bean.CandyResult
+import com.growlithe.uci.mysql.config.ExcelDataConfigure
 import com.growlithe.uci.mysql.database.abalone.dao.domain.AbaloneDO
 import com.growlithe.uci.mysql.database.absenteeism.dao.domain.AbsenteeismAtWorkDO
 import com.growlithe.uci.mysql.database.adult.dao.domain.AdultDO
 import com.growlithe.uci.mysql.database.anurancalls.dao.domain.AnuranCallsDO
 import com.growlithe.uci.mysql.excel.utils.enums.DataType
+import com.growlithe.uci.mysql.overview.dao.domain.DatabaseOverviewDO
 import com.growlithe.uci.utils.POIUtils
+import org.springframework.beans.BeanUtils
 import org.springframework.web.multipart.MultipartFile
 import java.math.BigDecimal
 
@@ -49,6 +52,48 @@ object ListDOFromExcelUtils {
      *
      * @param dataMap
      */
+    fun listDatabaseOverviewDOFromDataMap(dataMap: Map<Int, Array<String>>): CandyResult<MutableList<DatabaseOverviewDO>> {
+        val candyResult = CandyResult<MutableList<DatabaseOverviewDO>>()
+
+        val databaseOverviewDOList = mutableListOf<DatabaseOverviewDO>()
+        for (index: Int in dataMap.keys) {
+            val databaseOverviewDO = DatabaseOverviewDO()
+            val data = dataMap[index]!!
+            val realIndex = index + ExcelDataConfigure.DEFAULT_ADD_ROW
+
+            databaseOverviewDO.name = data[ExcelDataConfigure.DATABASE_OVERVIEW_NAME_INDEX]
+
+            try {
+                databaseOverviewDO.attributesNumber = data[ExcelDataConfigure.DATABASE_OVERVIEW_ATTRIBUTES_INDEX].toInt()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.DATABASE_OVERVIEW_ATTRIBUTES_INDEX + "列 is not num"
+                return candyResult
+            }
+            try {
+                databaseOverviewDO.instancesNumber = data[ExcelDataConfigure.DATABASE_OVERVIEW_INSTANCES_INDEX].toInt()
+            } catch (e: Exception) {
+                candyResult.message = "第 $realIndex 行中,第" + ExcelDataConfigure.DATABASE_OVERVIEW_INSTANCES_INDEX + "列 is not num"
+                return candyResult
+            }
+
+            databaseOverviewDO.area = data[ExcelDataConfigure.DATABASE_OVERVIEW_AREA_INDEX]
+            databaseOverviewDO.dateDonated = data[ExcelDataConfigure.DATABASE_OVERVIEW_DATE_DONATED_INDEX]
+
+            databaseOverviewDO.createBy = ExcelDataConfigure.GROWLITHE
+
+            databaseOverviewDOList.add(databaseOverviewDO)
+        }
+
+        candyResult.data = databaseOverviewDOList
+        candyResult.isSuccess = true
+        return candyResult
+    }
+
+    /**
+     * 从dataMap 转换成 鲍鱼集 数据
+     *
+     * @param dataMap
+     */
     fun listAbaloneDOFromDataMap(dataMap: Map<Int, Array<String>>): CandyResult<MutableList<AbaloneDO>> {
         val candyResult = CandyResult<MutableList<AbaloneDO>>()
 
@@ -57,6 +102,7 @@ object ListDOFromExcelUtils {
             val abaloneDO = AbaloneDO()
             val data = dataMap[index]!!
             val realIndex = index + ExcelDataConfigure.DEFAULT_ADD_ROW
+
             abaloneDO.sex = data[ExcelDataConfigure.ABALONE_DATA_SEX_INDEX]
             try {
                 abaloneDO.length = BigDecimal(data[ExcelDataConfigure.ABALONE_DATA_LENGTH_INDEX])
@@ -129,6 +175,7 @@ object ListDOFromExcelUtils {
             val absenteeismAtWorkDO = AbsenteeismAtWorkDO()
             val data = dataMap[index]!!
             val realIndex = index + ExcelDataConfigure.DEFAULT_ADD_ROW
+
             try {
                 absenteeismAtWorkDO.originId = data[ExcelDataConfigure.ABSENTEEISM_ORIGIN_ID_INDEX].toInt()
             } catch (e: Exception) {
@@ -290,7 +337,7 @@ object ListDOFromExcelUtils {
      * @param dataType
      * @param dataMap
      */
-    fun listAdultDOFromDataMap(dataType: DataType,dataMap: Map<Int, Array<String>>): CandyResult<MutableList<AdultDO>> {
+    fun listAdultDOFromDataMap(dataType: DataType, dataMap: Map<Int, Array<String>>): CandyResult<MutableList<AdultDO>> {
         val candyResult = CandyResult<MutableList<AdultDO>>()
 
         val adultDOList = mutableListOf<AdultDO>()
@@ -327,9 +374,9 @@ object ListDOFromExcelUtils {
 
             adultDO.maritalStatus = data[ExcelDataConfigure.ADULT_MARITAL_STATUS_INDEX]
             adultDO.occupation = data[ExcelDataConfigure.ADULT_OCCUPATION_INDEX]
-            adultDO.relationship =data[ExcelDataConfigure.ADULT_RELATIONSHIP_INDEX]
-            adultDO.race =data[ExcelDataConfigure.ADULT_RACE_INDEX]
-            adultDO.sex =data[ExcelDataConfigure.ADULT_SEX_INDEX]
+            adultDO.relationship = data[ExcelDataConfigure.ADULT_RELATIONSHIP_INDEX]
+            adultDO.race = data[ExcelDataConfigure.ADULT_RACE_INDEX]
+            adultDO.sex = data[ExcelDataConfigure.ADULT_SEX_INDEX]
 
             try {
                 adultDO.capitalGain = data[ExcelDataConfigure.ADULT_CAPITAL_GAIN_INDEX].toInt()

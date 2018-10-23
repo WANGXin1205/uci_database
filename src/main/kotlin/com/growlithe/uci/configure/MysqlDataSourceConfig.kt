@@ -16,7 +16,7 @@ import javax.sql.DataSource
 import java.util.Properties
 
 @Configuration
-@MapperScan(basePackages = arrayOf("com.growlithe.uci.mysql.database.**.dao.mapper"), sqlSessionFactoryRef = "mysqlSqlSessionFactory")
+@MapperScan(basePackages = arrayOf("com.growlithe.uci.mysql.**.**.dao.mapper"), sqlSessionFactoryRef = "mysqlSqlSessionFactory")
 class MysqlDataSourceConfig {
 
     @Bean(name = arrayOf("mysqlDataSource"))

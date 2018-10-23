@@ -9,7 +9,7 @@ data class AbsenteeismAtWorkDO(
         /**
          * id 主键
          */
-        var id: Int? = null,
+        var id: Long? = null,
 
         /**
          * 原始id

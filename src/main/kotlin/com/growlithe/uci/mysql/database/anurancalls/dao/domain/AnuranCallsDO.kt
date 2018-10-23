@@ -11,7 +11,7 @@ data class AnuranCallsDO(
         /**
          * id 主键
          */
-        var id: Int? = null,
+        var id: Long? = null,
         /**
          * MFCCs_1 系数
          */

@@ -2,7 +2,7 @@ package com.growlithe.uci.mysql.database.absenteeism.service
 
 import com.growlithe.uci.common.bean.CandyResult
 import com.growlithe.uci.mysql.database.absenteeism.dao.mapper.AbsenteeismAtWorkMapper
-import com.growlithe.uci.mysql.excel.utils.ExcelDataConfigure
+import com.growlithe.uci.mysql.config.ExcelDataConfigure
 import com.growlithe.uci.mysql.excel.utils.ListDOFromExcelUtils
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service

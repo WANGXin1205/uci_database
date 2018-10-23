@@ -1,4 +1,4 @@
-package com.growlithe.uci.mysql.excel.utils
+package com.growlithe.uci.mysql.config
 
 /**
  * @Author : Growlithe
@@ -20,6 +20,41 @@ object ExcelDataConfigure{
      * 转换为Excel行数所需要的值
      */
     val DEFAULT_ADD_ROW = 2
+
+    /**
+     * 默认创建人 更新人
+     */
+    val GROWLITHE = "Candy"
+
+    /**
+     * 数据集概况 名称
+     */
+    val DATABASE_OVERVIEW_DATA_NAME = arrayOf("name", "attributesNumber", "instancesNumber", "area", "dateDonated")
+
+    /**
+     * 数据集概况 名称位置
+     */
+    val DATABASE_OVERVIEW_NAME_INDEX = 0
+
+    /**
+     * 数据集概况 属性数量位置
+     */
+    val DATABASE_OVERVIEW_ATTRIBUTES_INDEX = 1
+
+    /**
+     * 数据集概况 实例数量位置
+     */
+    val DATABASE_OVERVIEW_INSTANCES_INDEX = 2
+
+    /**
+     * 数据集概况 领域位置
+     */
+    val DATABASE_OVERVIEW_AREA_INDEX = 3
+
+    /**
+     * 数据集概况 提交日期位置
+     */
+    val DATABASE_OVERVIEW_DATE_DONATED_INDEX = 4
 
     /**
      * 鲍鱼数据集 名称

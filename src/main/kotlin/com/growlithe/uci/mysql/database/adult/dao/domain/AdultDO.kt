@@ -10,7 +10,7 @@ data class AdultDO(
         /**
          * id 主键
          */
-        var id: Int? = null,
+        var id: Long? = null,
 
         /**
          * 年龄

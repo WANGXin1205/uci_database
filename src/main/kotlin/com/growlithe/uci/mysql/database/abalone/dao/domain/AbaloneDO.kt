@@ -12,7 +12,7 @@ data class AbaloneDO(
     /**
      * id 主键
      */
-    var id: Int? = null,
+    var id: Long? = null,
 
     /**
      * 性别 M，F和I（婴儿）

@@ -1,9 +1,8 @@
 package com.growlithe.uci.mysql.database.adult.service
 
 import com.growlithe.uci.common.bean.CandyResult
-import com.growlithe.uci.mysql.database.abalone.dao.mapper.AbaloneMapper
 import com.growlithe.uci.mysql.database.adult.dao.mapper.AdultMapper
-import com.growlithe.uci.mysql.excel.utils.ExcelDataConfigure
+import com.growlithe.uci.mysql.config.ExcelDataConfigure
 import com.growlithe.uci.mysql.excel.utils.ListDOFromExcelUtils
 import com.growlithe.uci.mysql.excel.utils.enums.DataType
 import org.slf4j.LoggerFactory
