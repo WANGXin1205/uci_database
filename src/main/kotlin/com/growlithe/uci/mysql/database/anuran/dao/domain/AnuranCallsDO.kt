@@ -1,4 +1,4 @@
-package com.growlithe.uci.mysql.database.anurancalls.dao.domain
+package com.growlithe.uci.mysql.database.anuran.dao.domain
 
 import java.math.BigDecimal
 

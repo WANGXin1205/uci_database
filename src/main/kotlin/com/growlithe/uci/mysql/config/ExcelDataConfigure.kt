@@ -29,7 +29,7 @@ object ExcelDataConfigure{
     /**
      * 数据集概况 名称
      */
-    val DATABASE_OVERVIEW_DATA_NAME = arrayOf("name", "attributesNumber", "instancesNumber", "area", "dateDonated")
+    val DATABASE_OVERVIEW_DATA_NAME = arrayOf("name", "attributesNumber", "instancesNumber", "area", "dateDonated","url")
 
     /**
      * 数据集概况 名称位置
@@ -55,6 +55,11 @@ object ExcelDataConfigure{
      * 数据集概况 提交日期位置
      */
     val DATABASE_OVERVIEW_DATE_DONATED_INDEX = 4
+
+    /**
+     * 数据集概况 url
+     */
+    val DATABASE_OVERVIEW_URL_INDEX = 5
 
     /**
      * 鲍鱼数据集 名称

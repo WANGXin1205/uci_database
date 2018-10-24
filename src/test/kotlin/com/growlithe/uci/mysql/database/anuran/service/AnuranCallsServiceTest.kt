@@ -1,11 +1,8 @@
-package com.growlithe.uci.mysql.database.anurancalls.service
+package com.growlithe.uci.mysql.database.anuran.service
 
-import com.growlithe.uci.mysql.database.adult.service.AdultService
-import com.growlithe.uci.mysql.database.anurancalls.dao.mapper.AnuranCallsMapper
 import org.junit.Assert
 import org.junit.Test
 
-import org.junit.Assert.*
 import org.junit.runner.RunWith
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.mock.web.MockMultipartFile

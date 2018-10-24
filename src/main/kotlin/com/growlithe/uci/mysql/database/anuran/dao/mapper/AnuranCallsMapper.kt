@@ -1,7 +1,6 @@
-package com.growlithe.uci.mysql.database.anurancalls.dao.mapper
+package com.growlithe.uci.mysql.database.anuran.dao.mapper
 
-import com.growlithe.uci.mysql.database.absenteeism.dao.domain.AbsenteeismAtWorkDO
-import com.growlithe.uci.mysql.database.anurancalls.dao.domain.AnuranCallsDO
+import com.growlithe.uci.mysql.database.anuran.dao.domain.AnuranCallsDO
 
 /**
  * @Author : Growlithe

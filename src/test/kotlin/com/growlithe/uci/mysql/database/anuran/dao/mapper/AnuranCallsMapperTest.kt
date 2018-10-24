@@ -1,4 +1,4 @@
-package com.growlithe.uci.mysql.database.anurancalls.dao.mapper
+package com.growlithe.uci.mysql.database.anuran.dao.mapper
 
 import org.junit.Test
 import org.junit.runner.RunWith

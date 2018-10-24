@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.growlithe.uci.mysql.database.anurancalls.dao.mapper.AnuranCallsMapper">
+<mapper namespace="com.growlithe.uci.mysql.database.anuran.dao.mapper.AnuranCallsMapper">
 
-    <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.anurancalls.dao.domain.AnuranCallsDO">
+    <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.anuran.dao.domain.AnuranCallsDO">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="mfccs_a" property="mfccsA" jdbcType="DECIMAL"/>
         <result column="mfccs_b" property="mfccsB" jdbcType="DECIMAL"/>

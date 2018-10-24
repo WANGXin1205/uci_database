@@ -1,15 +1,16 @@
 package com.growlithe.uci.mysql.excel.utils
 
 import com.growlithe.uci.common.bean.CandyResult
+import com.growlithe.uci.mysql.config.DatabaseUrl
 import com.growlithe.uci.mysql.config.ExcelDataConfigure
 import com.growlithe.uci.mysql.database.abalone.dao.domain.AbaloneDO
 import com.growlithe.uci.mysql.database.absenteeism.dao.domain.AbsenteeismAtWorkDO
 import com.growlithe.uci.mysql.database.adult.dao.domain.AdultDO
-import com.growlithe.uci.mysql.database.anurancalls.dao.domain.AnuranCallsDO
+import com.growlithe.uci.mysql.database.anuran.dao.domain.AnuranCallsDO
 import com.growlithe.uci.mysql.excel.utils.enums.DataType
 import com.growlithe.uci.mysql.overview.dao.domain.DatabaseOverviewDO
 import com.growlithe.uci.utils.POIUtils
-import org.springframework.beans.BeanUtils
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.web.multipart.MultipartFile
 import java.math.BigDecimal
 
@@ -48,7 +49,7 @@ object ListDOFromExcelUtils {
     }
 
     /**
-     * 从dataMap 转换成 鲍鱼集 数据
+     * 从dataMap 转换成 数据集概况数据
      *
      * @param dataMap
      */
@@ -78,6 +79,8 @@ object ListDOFromExcelUtils {
 
             databaseOverviewDO.area = data[ExcelDataConfigure.DATABASE_OVERVIEW_AREA_INDEX]
             databaseOverviewDO.dateDonated = data[ExcelDataConfigure.DATABASE_OVERVIEW_DATE_DONATED_INDEX]
+            val url = data[ExcelDataConfigure.DATABASE_OVERVIEW_URL_INDEX]
+            databaseOverviewDO.url = url.replace(DatabaseUrl.url!!, "", false)
 
             databaseOverviewDO.createBy = ExcelDataConfigure.GROWLITHE
 

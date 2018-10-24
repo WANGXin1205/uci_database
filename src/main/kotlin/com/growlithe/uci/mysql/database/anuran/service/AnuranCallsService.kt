@@ -1,7 +1,7 @@
-package com.growlithe.uci.mysql.database.anurancalls.service
+package com.growlithe.uci.mysql.database.anuran.service
 
 import com.growlithe.uci.common.bean.CandyResult
-import com.growlithe.uci.mysql.database.anurancalls.dao.mapper.AnuranCallsMapper
+import com.growlithe.uci.mysql.database.anuran.dao.mapper.AnuranCallsMapper
 import com.growlithe.uci.mysql.config.ExcelDataConfigure
 import com.growlithe.uci.mysql.excel.utils.ListDOFromExcelUtils
 import org.slf4j.LoggerFactory

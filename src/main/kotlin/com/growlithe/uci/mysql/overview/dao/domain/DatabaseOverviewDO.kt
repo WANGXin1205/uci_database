@@ -1,5 +1,7 @@
 package com.growlithe.uci.mysql.overview.dao.domain
 
+import java.net.URI
+import java.net.URL
 import java.util.*
 
 /**
@@ -52,6 +54,10 @@ data class DatabaseOverviewDO(
          * 捐献日期
          */
         var dateDonated:String ? = null,
+        /**
+         * 数据集网址
+         */
+        var url: String? = null,
         /**
          * 数据状态 1 有效 0 失效
          */
