@@ -867,3 +867,58 @@ Caused by: java.lang.IllegalArgumentException: Invalid boolean value [http://arc
 2018-10-24 17:08:35.861  INFO 9372 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@d4ab71a: startup date [Wed Oct 24 17:07:18 CST 2018]; root of context hierarchy
 2018-10-24 17:08:35.864  INFO 9372 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-10-24 17:08:35.879  INFO 9372 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 21:26:48.630  INFO 9720 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Starting AvilaServiceTest on wangxindeMacBook-Pro.local with PID 9720 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-24 21:26:48.631  INFO 9720 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : The following profiles are active: dev
+2018-10-24 21:26:48.653  INFO 9720 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b4ef7: startup date [Wed Oct 24 21:26:48 CST 2018]; root of context hierarchy
+2018-10-24 21:26:51.518  INFO 9720 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Started AvilaServiceTest in 3.645 seconds (JVM running for 5.104)
+2018-10-24 21:26:51.697  INFO 9720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 21:26:52.019  INFO 9720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 21:26:52.106  INFO 9720 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-24 21:26:52.153  INFO 9720 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-24 21:26:52.184  INFO 9720 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b4ef7: startup date [Wed Oct 24 21:26:48 CST 2018]; root of context hierarchy
+2018-10-24 21:26:52.194  INFO 9720 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 21:26:52.214  INFO 9720 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 21:29:53.489  INFO 9724 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Starting AvilaServiceTest on wangxindeMacBook-Pro.local with PID 9724 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-24 21:29:53.490  INFO 9724 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : The following profiles are active: dev
+2018-10-24 21:29:53.525  INFO 9724 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b4ef7: startup date [Wed Oct 24 21:29:53 CST 2018]; root of context hierarchy
+2018-10-24 21:29:56.379  INFO 9724 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Started AvilaServiceTest in 3.529 seconds (JVM running for 5.08)
+2018-10-24 21:29:56.541  INFO 9724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 21:29:56.831  INFO 9724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 21:29:56.929  INFO 9724 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-24 21:29:56.971  INFO 9724 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-24 21:29:56.990  INFO 9724 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b4ef7: startup date [Wed Oct 24 21:29:53 CST 2018]; root of context hierarchy
+2018-10-24 21:29:56.993  INFO 9724 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 21:29:57.001  INFO 9724 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 21:32:50.451  INFO 9738 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Starting AvilaServiceTest on wangxindeMacBook-Pro.local with PID 9738 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-24 21:32:50.454  INFO 9738 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : The following profiles are active: dev
+2018-10-24 21:32:50.476  INFO 9738 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b4ef7: startup date [Wed Oct 24 21:32:50 CST 2018]; root of context hierarchy
+2018-10-24 21:32:53.416  INFO 9738 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Started AvilaServiceTest in 3.699 seconds (JVM running for 5.467)
+2018-10-24 21:32:53.570  INFO 9738 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 21:32:53.962  INFO 9738 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 21:32:54.073  INFO 9738 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-24 21:32:54.178  INFO 9738 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-24 21:32:54.212  INFO 9738 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b4ef7: startup date [Wed Oct 24 21:32:50 CST 2018]; root of context hierarchy
+2018-10-24 21:32:54.225  INFO 9738 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 21:32:54.246  INFO 9738 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 21:47:39.658  INFO 9746 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Starting AvilaServiceTest on wangxindeMacBook-Pro.local with PID 9746 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-24 21:47:39.659  INFO 9746 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : The following profiles are active: dev
+2018-10-24 21:47:39.679  INFO 9746 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b4ef7: startup date [Wed Oct 24 21:47:39 CST 2018]; root of context hierarchy
+2018-10-24 21:47:42.309  INFO 9746 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Started AvilaServiceTest in 3.294 seconds (JVM running for 4.845)
+2018-10-24 21:47:42.461  INFO 9746 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 21:47:42.790  INFO 9746 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 21:47:42.881  INFO 9746 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-24 21:47:42.926  INFO 9746 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-24 21:47:42.950  INFO 9746 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3b4ef7: startup date [Wed Oct 24 21:47:39 CST 2018]; root of context hierarchy
+2018-10-24 21:47:42.956  INFO 9746 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 21:47:42.977  INFO 9746 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 21:48:06.594  INFO 9749 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Starting AvilaServiceTest on wangxindeMacBook-Pro.local with PID 9749 (started by wangxin in /Users/wangxin/code/kotlin/uci_database)
+2018-10-24 21:48:06.595  INFO 9749 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : The following profiles are active: dev
+2018-10-24 21:48:06.619  INFO 9749 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@d4ab71a: startup date [Wed Oct 24 21:48:06 CST 2018]; root of context hierarchy
+2018-10-24 21:48:10.505  INFO 9749 --- [main] c.g.u.m.d.a.service.AvilaServiceTest     : Started AvilaServiceTest in 4.637 seconds (JVM running for 6.406)
+2018-10-24 21:48:10.633  INFO 9749 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 21:48:11.007  INFO 9749 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 21:48:11.094  INFO 9749 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-24 21:48:11.144  INFO 9749 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-10-24 21:48:11.168  INFO 9749 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@d4ab71a: startup date [Wed Oct 24 21:48:06 CST 2018]; root of context hierarchy
+2018-10-24 21:48:11.175  INFO 9749 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 21:48:11.193  INFO 9749 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,9 +1,12 @@
 logging:
+  file: logs/spring-boot-logging.log
   level:
+    com.growlithe.uci.mysql.database.avila.dao.mapper : debug
     root: info
     mybatis: info
     sql: debug
     runTimeCount: info
+
 
 spring:
   application:
