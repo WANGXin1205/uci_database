@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.growlithe.uci.mysql.database.bankmarketing.dao.mapper.BankMarketingMapper">
+
+    <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.bankmarketing.dao.domain.BankMarketingDO">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="age" property="age" jdbcType="INTEGER"/>
+        <result column="job" property="job" jdbcType="VARCHAR"/>
+        <result column="marital" property="marital" jdbcType="VARCHAR"/>
+        <result column="education" property="education" jdbcType="VARCHAR"/>
+        <result column="default_credit" property="defaultCredit" jdbcType="VARCHAR"/>
+        <result column="housing" property="housing" jdbcType="VARCHAR"/>
+        <result column="loan" property="loan" jdbcType="VARCHAR"/>
+        <result column="contact" property="contact" jdbcType="VARCHAR"/>
+        <result column="month" property="month" jdbcType="VARCHAR"/>
+        <result column="day_of_week" property="dayOfWeek" jdbcType="VARCHAR"/>
+        <result column="duration" property="duration" jdbcType="INTEGER"/>
+        <result column="campaign" property="campaign" jdbcType="INTEGER"/>
+        <result column="p_days" property="pDays" jdbcType="INTEGER"/>
+        <result column="previous" property="previous" jdbcType="INTEGER"/>
+        <result column="pout_come" property="poutCome" jdbcType="VARCHAR"/>
+        <result column="emp_var_rate" property="empVarRate" jdbcType="DECIMAL"/>
+        <result column="cons_price_idx" property="consPriceIdx" jdbcType="DECIMAL"/>
+        <result column="cons_conf_idx" property="consConfIdx" jdbcType="DECIMAL"/>
+        <result column="euribor_m" property="euriborM" jdbcType="DECIMAL"/>
+        <result column="nr_employed" property="nrEmployed" jdbcType="INTEGER"/>
+        <result column="class_name" property="className" jdbcType="VARCHAR"/>
+        <result column="data_type" property="dataType" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="base_property">
+    id, <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    age, job, marital, education, default_credit, housing, loan, contact, month,
+    day_of_week, duration, campaign, p_days, previous, pout_come, emp_var_rate, cons_price_idx,
+    cons_conf_idx, euribor_m, nr_employed, class_name, data_type, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.bank_marketing
+        where status = 1
+    </select>
+
+
+</mapper>
