@@ -39,6 +39,6 @@ data class BanknoteAuthenticationDO (
 
 ) {
     override fun toString(): String {
-        return "BanknoteAuthenticationDO(id=$id, variance=$variance, skewness=$skewness, curtosis=$curtosis, entropy=$entropy, className=$className, status=$status)"
+        return "BanknoteAuthenticationDO(id=$id, variance=$variance, skewness=$skewness, curtosis=$curtosis, entropy=$entropy, className=$className, status=$status)\n"
     }
 }

@@ -18,13 +18,11 @@
     variance, skewness, curtosis, entropy, class_name, status
     </sql>
 
-
     <select id="listAll" resultMap="BaseResultMap">
         select
         <include refid="base_property"/>
         from uci_database.banknote_authentication
         where status = 1
     </select>
-
 
 </mapper>

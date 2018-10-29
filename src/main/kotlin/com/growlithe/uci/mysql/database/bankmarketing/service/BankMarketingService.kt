@@ -25,7 +25,7 @@ class BankMarketingService {
     }
 
     @Resource
-    lateinit var bankMarketingMapper: BankMarketingMapper
+    private lateinit var bankMarketingMapper: BankMarketingMapper
 
     /**
      * 查询所有数据

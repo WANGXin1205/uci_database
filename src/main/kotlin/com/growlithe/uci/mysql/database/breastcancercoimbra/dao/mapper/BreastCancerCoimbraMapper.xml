@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.breastcancercoimbra.dao.mapper.BreastCancerCoimbraMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.breastcancercoimbra.dao.domain.BreastCancerCoimbraDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="bmi" jdbcType="DECIMAL" property="bmi" />
+    <result column="glucose" jdbcType="INTEGER" property="glucose" />
+    <result column="Insulin" jdbcType="DECIMAL" property="insulin" />
+    <result column="homa" jdbcType="DECIMAL" property="homa" />
+    <result column="leptin" jdbcType="DECIMAL" property="leptin" />
+    <result column="adiponectin" jdbcType="DECIMAL" property="adiponectin" />
+    <result column="resistin" jdbcType="DECIMAL" property="resistin" />
+    <result column="mcp" jdbcType="DECIMAL" property="mcp" />
+    <result column="classification" jdbcType="INTEGER" property="classification" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    age, bmi, glucose, Insulin, homa, leptin, adiponectin, resistin, mcp, classification, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.breast_cancer_coimbra
+        where status = 1
+    </select>
+
+</mapper>
