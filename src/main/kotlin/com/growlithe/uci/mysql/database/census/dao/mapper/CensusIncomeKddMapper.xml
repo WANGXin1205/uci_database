@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.census.dao.mapper.CensusIncomeKddMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.census.dao.domain.CensusIncomeKddDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="class_of_worker" jdbcType="VARCHAR" property="classOfWorker" />
+    <result column="industry_code" jdbcType="INTEGER" property="industryCode" />
+    <result column="occupation_code" jdbcType="INTEGER" property="occupationCode" />
+    <result column="education" jdbcType="VARCHAR" property="education" />
+    <result column="wage_per_hour" jdbcType="INTEGER" property="wagePerHour" />
+    <result column="enrolled" jdbcType="VARCHAR" property="enrolled" />
+    <result column="marital_status" jdbcType="VARCHAR" property="maritalStatus" />
+    <result column="major_industry_code" jdbcType="VARCHAR" property="majorIndustryCode" />
+    <result column="major_occupation_code" jdbcType="VARCHAR" property="majorOccupationCode" />
+    <result column="mace" jdbcType="VARCHAR" property="mace" />
+    <result column="hispanic_origin" jdbcType="VARCHAR" property="hispanicOrigin" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="member_of_labor_union" jdbcType="VARCHAR" property="memberOfLaborUnion" />
+    <result column="reason_for_unemployment" jdbcType="VARCHAR" property="reasonForUnemployment" />
+    <result column="employment_stat" jdbcType="VARCHAR" property="employmentStat" />
+    <result column="capital_gains" jdbcType="INTEGER" property="capitalGains" />
+    <result column="capital_losses" jdbcType="INTEGER" property="capitalLosses" />
+    <result column="divdends_from_stocks" jdbcType="INTEGER" property="divdendsFromStocks" />
+    <result column="tax_filer_status" jdbcType="VARCHAR" property="taxFilerStatus" />
+    <result column="region_of_previous_residence" jdbcType="VARCHAR" property="regionOfPreviousResidence" />
+    <result column="state_of_previous_residence" jdbcType="VARCHAR" property="stateOfPreviousResidence" />
+    <result column="detailed_household_and_family_stat" jdbcType="VARCHAR" property="detailedHouseholdAndFamilyStat" />
+    <result column="detailed_household_summary" jdbcType="VARCHAR" property="detailedHouseholdSummary" />
+    <result column="migration_code_change_msa" jdbcType="DECIMAL" property="migrationCodeChangeMsa" />
+    <result column="migration_code_change_reg" jdbcType="VARCHAR" property="migrationCodeChangeReg" />
+    <result column="migration_code_move" jdbcType="VARCHAR" property="migrationCodeMove" />
+    <result column="live_in" jdbcType="VARCHAR" property="liveIn" />
+    <result column="migration" jdbcType="VARCHAR" property="migration" />
+    <result column="num_persons_worked" jdbcType="VARCHAR" property="numPersonsWorked" />
+    <result column="family_members" jdbcType="INTEGER" property="familyMembers" />
+    <result column="country_of_birth_father" jdbcType="VARCHAR" property="countryOfBirthFather" />
+    <result column="country_of_birth_mother" jdbcType="VARCHAR" property="countryOfBirthMother" />
+    <result column="country_of_birth_self" jdbcType="VARCHAR" property="countryOfBirthSelf" />
+    <result column="citizenship" jdbcType="VARCHAR" property="citizenship" />
+    <result column="own_business" jdbcType="VARCHAR" property="ownBusiness" />
+    <result column="fill_inc_questionnaire" jdbcType="INTEGER" property="fillIncQuestionnaire" />
+    <result column="veterans_benefits" jdbcType="VARCHAR" property="veteransBenefits" />
+    <result column="weeks_worked" jdbcType="INTEGER" property="weeksWorked" />
+    <result column="year" jdbcType="INTEGER" property="year" />
+    <result column="class_name" jdbcType="INTEGER" property="className" />
+    <result column="data_type" jdbcType="INTEGER" property="dataType" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    age, class_of_worker, industry_code, occupation_code, education, wage_per_hour,
+    enrolled, marital_status, major_industry_code, major_occupation_code, mace, hispanic_origin,
+    sex, member_of_labor_union, reason_for_unemployment, employment_stat, capital_gains,
+    capital_losses, divdends_from_stocks, tax_filer_status, region_of_previous_residence,
+    state_of_previous_residence, detailed_household_and_family_stat, detailed_household_summary,
+    migration_code_change_msa, migration_code_change_reg, migration_code_move, live_in,
+    migration, num_persons_worked, family_members, country_of_birth_father, country_of_birth_mother,
+    country_of_birth_self, citizenship, own_business, fill_inc_questionnaire, veterans_benefits,
+    weeks_worked, year, class_name, data_type, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.census_income_kdd
+        where status = 1
+    </select>
+
+</mapper>

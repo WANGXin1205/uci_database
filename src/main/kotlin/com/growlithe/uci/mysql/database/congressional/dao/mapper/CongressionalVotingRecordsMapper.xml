@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.congressional.dao.mapper.CongressionalVotingRecordsMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.congressional.dao.domain.CongressionalVotingRecordsDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="handicapped_infants" jdbcType="VARCHAR" property="handicappedInfants" />
+    <result column="water_project_cost_sharing" jdbcType="VARCHAR" property="waterProjectCostSharing" />
+    <result column="adoption_of_the_budget_resolution" jdbcType="VARCHAR" property="adoptionOfTheBudgetResolution" />
+    <result column="physician_fee_freeze" jdbcType="VARCHAR" property="physicianFeeFreeze" />
+    <result column="el_salvador_aid" jdbcType="VARCHAR" property="elSalvadorAid" />
+    <result column="religious_groups_in_schools" jdbcType="VARCHAR" property="religiousGroupsInSchools" />
+    <result column="anti_satellite_test_ban" jdbcType="VARCHAR" property="antiSatelliteTestBan" />
+    <result column="aid_to_nicaraguan_contras" jdbcType="VARCHAR" property="aidToNicaraguanContras" />
+    <result column="mx_missile" jdbcType="VARCHAR" property="mxMissile" />
+    <result column="immigration" jdbcType="VARCHAR" property="immigration" />
+    <result column="synfuels_corporation_cutback" jdbcType="VARCHAR" property="synfuelsCorporationCutback" />
+    <result column="education_spending" jdbcType="VARCHAR" property="educationSpending" />
+    <result column="superfund_right_to_sue" jdbcType="VARCHAR" property="superfundRightToSue" />
+    <result column="crime" jdbcType="VARCHAR" property="crime" />
+    <result column="duty_free_exports" jdbcType="VARCHAR" property="dutyFreeExports" />
+    <result column="export_administration_act_south_africa" jdbcType="VARCHAR" property="exportAdministrationActSouthAfrica" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    class_name, handicapped_infants, water_project_cost_sharing, adoption_of_the_budget_resolution,
+    physician_fee_freeze, el_salvador_aid, religious_groups_in_schools, anti_satellite_test_ban,
+    aid_to_nicaraguan_contras, mx_missile, immigration, synfuels_corporation_cutback,
+    education_spending, superfund_right_to_sue, crime, duty_free_exports, export_administration_act_south_africa,
+    status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.congressional_voting_records
+        where status = 1
+    </select>
+
+</mapper>

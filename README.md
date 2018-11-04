@@ -10,6 +10,8 @@
 增加abalone和absenteeism_at_work，adult，anuran_calls数据集的保存和查询所有数据的方法。
 同时使用navicat导入cvs,建表效率提升。完成数据集概况表中部分数据集的查询。
 
+## 2018.11
+&nbsp;&nbsp;&nbsp;&nbsp; 完善数据集
 
 ## 未来计划   
 1.筛选数据集导入mysql，给出init，仅仅是结构，对于特大型的数据集，不给cvs，给出url。
