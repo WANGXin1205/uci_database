@@ -1,6 +1,6 @@
 package com.growlithe.uci.mysql.overview.dao.mapper;
 
-import com.growlithe.uci.mysql.database.abalone.dao.domain.AbaloneDO;
+import com.growlithe.uci.mysql.overview.bean.DatabaseOverviewBean;
 import com.growlithe.uci.mysql.overview.dao.domain.DatabaseOverviewDO;
 
 import java.util.List;
@@ -17,7 +17,7 @@ public interface DatabaseOverviewMapper {
      *
      * @return
      */
-    List<DatabaseOverviewDO> listAll();
+    List<DatabaseOverviewBean> listAll();
 
     /**
      * 保存数据集

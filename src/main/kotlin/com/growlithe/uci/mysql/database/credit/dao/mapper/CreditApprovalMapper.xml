@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.credit.dao.mapper.CreditApprovalMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.credit.dao.domain.CreditApprovalDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="secret_a" jdbcType="VARCHAR" property="secretA" />
+    <result column="secret_b" jdbcType="DECIMAL" property="secretB" />
+    <result column="secret_c" jdbcType="DECIMAL" property="secretC" />
+    <result column="secret_d" jdbcType="VARCHAR" property="secretD" />
+    <result column="secret_e" jdbcType="VARCHAR" property="secretE" />
+    <result column="secret_f" jdbcType="VARCHAR" property="secretF" />
+    <result column="secret_g" jdbcType="VARCHAR" property="secretG" />
+    <result column="secret_h" jdbcType="DECIMAL" property="secretH" />
+    <result column="secret_i" jdbcType="VARCHAR" property="secretI" />
+    <result column="secret_j" jdbcType="VARCHAR" property="secretJ" />
+    <result column="secret_k" jdbcType="INTEGER" property="secretK" />
+    <result column="secret_l" jdbcType="VARCHAR" property="secretL" />
+    <result column="secret_m" jdbcType="VARCHAR" property="secretM" />
+    <result column="secret_n" jdbcType="INTEGER" property="secretN" />
+    <result column="secret_o" jdbcType="INTEGER" property="secretO" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    secret_a, secret_b, secret_c, secret_d, secret_e, secret_f, secret_g, secret_h,
+    secret_i, secret_j, secret_k, secret_l, secret_m, secret_n, secret_o, class_name,
+    status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.credit_approval
+        where status = 1
+    </select>
+
+</mapper>

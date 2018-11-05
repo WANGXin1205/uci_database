@@ -8,9 +8,9 @@ import com.growlithe.uci.mysql.database.absenteeism.dao.domain.AbsenteeismAtWork
 import com.growlithe.uci.mysql.database.adult.dao.domain.AdultDO
 import com.growlithe.uci.mysql.database.anuran.dao.domain.AnuranCallsDO
 import com.growlithe.uci.mysql.excel.utils.enums.DataType
+import com.growlithe.uci.mysql.overview.bean.DatabaseOverviewBean
 import com.growlithe.uci.mysql.overview.dao.domain.DatabaseOverviewDO
 import com.growlithe.uci.utils.POIUtils
-import org.springframework.beans.factory.annotation.Value
 import org.springframework.web.multipart.MultipartFile
 import java.math.BigDecimal
 
@@ -81,8 +81,6 @@ object ListDOFromExcelUtils {
             databaseOverviewDO.dateDonated = data[ExcelDataConfigure.DATABASE_OVERVIEW_DATE_DONATED_INDEX]
             val url = data[ExcelDataConfigure.DATABASE_OVERVIEW_URL_INDEX]
             databaseOverviewDO.url = url.replace(DatabaseUrl.url!!, "", false)
-
-            databaseOverviewDO.createBy = ExcelDataConfigure.GROWLITHE
 
             databaseOverviewDOList.add(databaseOverviewDO)
         }

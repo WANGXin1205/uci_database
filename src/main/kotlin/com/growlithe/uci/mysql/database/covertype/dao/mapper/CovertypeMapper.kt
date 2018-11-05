@@ -6,7 +6,7 @@ import com.growlithe.uci.mysql.database.covertype.dao.domain.CovertypeDO
 
 interface CovertypeMapper{
     /**
-     * 查询所有的 连接数据集
+     * 查询所有的 植被覆盖数据集
      *
      * @return
      */

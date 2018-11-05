@@ -150,4 +150,24 @@ data class CovertypeDO(
          * 数据状态 1 有效 0 失效
          */
         var status: String? = null
-)
+
+) {
+    override fun toString(): String {
+        return "CovertypeDO(id=$id, elevation=$elevation, aspect=$aspect, slope=$slope, horizontalDistanceToHydrology=$horizontalDistanceToHydrology, " +
+                "verticalDistanceToHydrology=$verticalDistanceToHydrology, horizontalDistanceToRoadways=$horizontalDistanceToRoadways, " +
+                "hillshadeAm=$hillshadeAm, hillshadeNoon=$hillshadeNoon, hillshadePm=$hillshadePm, " +
+                "horizontalDistanceToFirePoints=$horizontalDistanceToFirePoints, wildernessAreaA=$wildernessAreaA, " +
+                "wildernessAreaB=$wildernessAreaB, wildernessAreaC=$wildernessAreaC, wildernessAreaD=$wildernessAreaD, " +
+                "soilTypeAa=$soilTypeAa, soilTypeAb=$soilTypeAb, soilTypeAc=$soilTypeAc, soilTypeAd=$soilTypeAd, " +
+                "soilTypeAe=$soilTypeAe, soilTypeAf=$soilTypeAf, soilTypeAg=$soilTypeAg, soilTypeAh=$soilTypeAh, " +
+                "soilTypeAi=$soilTypeAi, soilTypeAj=$soilTypeAj, soilTypeAk=$soilTypeAk, soilTypeAl=$soilTypeAl, " +
+                "soilTypeAm=$soilTypeAm, soilTypeAn=$soilTypeAn, soilTypeAo=$soilTypeAo, soilTypeAp=$soilTypeAp, " +
+                "soilTypeAq=$soilTypeAq, soilTypeAr=$soilTypeAr, soilTypeAs=$soilTypeAs, soilTypeAt=$soilTypeAt, " +
+                "soilTypeAu=$soilTypeAu, soilTypeAv=$soilTypeAv, soilTypeAw=$soilTypeAw, soilTypeAx=$soilTypeAx, " +
+                "soilTypeAy=$soilTypeAy, soilTypeAz=$soilTypeAz, soilTypeBa=$soilTypeBa, soilTypeBb=$soilTypeBb, " +
+                "soilTypeBc=$soilTypeBc, soilTypeBd=$soilTypeBd, soilTypeBe=$soilTypeBe, soilTypeBf=$soilTypeBf, " +
+                "soilTypeBg=$soilTypeBg, soilTypeBh=$soilTypeBh, soilTypeBi=$soilTypeBi, soilTypeBj=$soilTypeBj, " +
+                "soilTypeBk=$soilTypeBk, soilTypeBl=$soilTypeBl, soilTypeBm=$soilTypeBm, soilTypeBn=$soilTypeBn, " +
+                "coverType=$coverType, status=$status)\n"
+    }
+}

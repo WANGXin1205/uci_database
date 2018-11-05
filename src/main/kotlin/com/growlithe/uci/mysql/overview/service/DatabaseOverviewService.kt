@@ -37,7 +37,7 @@ class DatabaseOverviewService {
     fun save(multipartFile: MultipartFile): CandyResult<Void> {
         val candyResult = CandyResult<Void>()
 
-        // 数据转换 Excel 数据 转换为 DatabaseOverviewDO
+        // 数据转换 Excel 数据 转换为 DatabaseOverviewBean
         val getDataMapFromExcelResult = ListDOFromExcelUtils.getDataMapFromExcel(multipartFile, ExcelDataConfigure.DATABASE_OVERVIEW_DATA_NAME)
         if (!getDataMapFromExcelResult.isSuccess) {
             LOGGER.warn(getDataMapFromExcelResult.message)
@@ -45,7 +45,7 @@ class DatabaseOverviewService {
             return candyResult
         }
 
-        // 获取 DatabaseOverviewDO 并进行入参检查
+        // 获取 DatabaseOverviewBean 并进行入参检查
         val dataMap = getDataMapFromExcelResult.data
 
         // 将Excel转换的dataMap数据 变为 abaloneDOList

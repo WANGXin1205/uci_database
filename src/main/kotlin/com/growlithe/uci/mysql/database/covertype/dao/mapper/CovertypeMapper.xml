@@ -85,5 +85,4 @@
         where status = 1
     </select>
 
-
 </mapper>
