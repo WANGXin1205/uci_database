@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.page.dao.mapper.PageBlocksMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.page.dao.domain.PageBlocksDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="height" jdbcType="INTEGER" property="height" />
+    <result column="lenght" jdbcType="INTEGER" property="lenght" />
+    <result column="area" jdbcType="INTEGER" property="area" />
+    <result column="eccen" jdbcType="DECIMAL" property="eccen" />
+    <result column="p_black" jdbcType="DECIMAL" property="pBlack" />
+    <result column="p_and" jdbcType="DECIMAL" property="pAnd" />
+    <result column="mean_tr" jdbcType="DECIMAL" property="meanTr" />
+    <result column="blackpix" jdbcType="INTEGER" property="blackpix" />
+    <result column="blackand" jdbcType="INTEGER" property="blackand" />
+    <result column="wb_trans" jdbcType="INTEGER" property="wbTrans" />
+    <result column="class_name" jdbcType="INTEGER" property="className" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    height, lenght, area, eccen, p_black, p_and, mean_tr, blackpix, blackand, wb_trans,
+    class_name, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.page_blocks
+        where status = 1
+    </select>
+
+</mapper>

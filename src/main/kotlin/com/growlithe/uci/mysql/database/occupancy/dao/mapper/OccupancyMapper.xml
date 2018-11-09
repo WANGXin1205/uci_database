@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.occupancy.dao.mapper.OccupancyMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.occupancy.dao.domain.OccupancyDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="date" jdbcType="TIMESTAMP" property="date" />
+    <result column="temperature" jdbcType="DECIMAL" property="temperature" />
+    <result column="humidity" jdbcType="DECIMAL" property="humidity" />
+    <result column="light" jdbcType="DECIMAL" property="light" />
+    <result column="carbon_dioxide" jdbcType="DECIMAL" property="carbonDioxide" />
+    <result column="humidity_ratio" jdbcType="DECIMAL" property="humidityRatio" />
+    <result column="occupancy" jdbcType="INTEGER" property="occupancy" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    date, temperature, humidity, light, carbon_dioxide, humidity_ratio, occupancy,
+    status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.occupancy
+        where status = 1
+    </select>
+
+</mapper>

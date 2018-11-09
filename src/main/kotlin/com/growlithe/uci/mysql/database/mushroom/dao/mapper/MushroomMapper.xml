@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.mushroom.dao.mapper.MushroomMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.mushroom.dao.domain.MushroomDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="cap_shape" jdbcType="VARCHAR" property="capShape" />
+    <result column="cap_surface" jdbcType="VARCHAR" property="capSurface" />
+    <result column="cap_color" jdbcType="VARCHAR" property="capColor" />
+    <result column="bruises" jdbcType="VARCHAR" property="bruises" />
+    <result column="odor" jdbcType="VARCHAR" property="odor" />
+    <result column="gill_attachment" jdbcType="VARCHAR" property="gillAttachment" />
+    <result column="gill_spacing" jdbcType="VARCHAR" property="gillSpacing" />
+    <result column="gill_size" jdbcType="VARCHAR" property="gillSize" />
+    <result column="gill_color" jdbcType="VARCHAR" property="gillColor" />
+    <result column="stalk_shape" jdbcType="VARCHAR" property="stalkShape" />
+    <result column="stalk_root" jdbcType="VARCHAR" property="stalkRoot" />
+    <result column="stalk_surface_above_ring" jdbcType="VARCHAR" property="stalkSurfaceAboveRing" />
+    <result column="stalk_surface_below_ring" jdbcType="VARCHAR" property="stalkSurfaceBelowRing" />
+    <result column="stalk_color_above_ring" jdbcType="VARCHAR" property="stalkColorAboveRing" />
+    <result column="stalk_color_below_ring" jdbcType="VARCHAR" property="stalkColorBelowRing" />
+    <result column="veil_type" jdbcType="VARCHAR" property="veilType" />
+    <result column="veil_color" jdbcType="VARCHAR" property="veilColor" />
+    <result column="ring_number" jdbcType="VARCHAR" property="ringNumber" />
+    <result column="ring_type" jdbcType="VARCHAR" property="ringType" />
+    <result column="spore_print_color" jdbcType="VARCHAR" property="sporePrintColor" />
+    <result column="population" jdbcType="VARCHAR" property="population" />
+    <result column="habitat" jdbcType="VARCHAR" property="habitat" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, class_name, cap_shape, cap_surface, cap_color, bruises, odor, gill_attachment, 
+    gill_spacing, gill_size, gill_color, stalk_shape, stalk_root, stalk_surface_above_ring, 
+    stalk_surface_below_ring, stalk_color_above_ring, stalk_color_below_ring, veil_type, 
+    veil_color, ring_number, ring_type, spore_print_color, population, habitat, status
+  </sql>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    class_name, cap_shape, cap_surface, cap_color, bruises, odor, gill_attachment,
+    gill_spacing, gill_size, gill_color, stalk_shape, stalk_root, stalk_surface_above_ring,
+    stalk_surface_below_ring, stalk_color_above_ring, stalk_color_below_ring, veil_type,
+    veil_color, ring_number, ring_type, spore_print_color, population, habitat, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.mushroom
+        where status = 1
+    </select>
+
+</mapper>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.statloglandsat.dao.mapper.StatlogLandsatSatelliteMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.statloglandsat.dao.domain.StatlogLandsatSatelliteDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="aa" jdbcType="INTEGER" property="aa" />
+    <result column="ab" jdbcType="INTEGER" property="ab" />
+    <result column="ac" jdbcType="INTEGER" property="ac" />
+    <result column="ad" jdbcType="INTEGER" property="ad" />
+    <result column="ae" jdbcType="INTEGER" property="ae" />
+    <result column="af" jdbcType="INTEGER" property="af" />
+    <result column="ba" jdbcType="INTEGER" property="ba" />
+    <result column="bb" jdbcType="INTEGER" property="bb" />
+    <result column="bc" jdbcType="INTEGER" property="bc" />
+    <result column="bd" jdbcType="INTEGER" property="bd" />
+    <result column="be" jdbcType="INTEGER" property="be" />
+    <result column="bf" jdbcType="INTEGER" property="bf" />
+    <result column="ca" jdbcType="INTEGER" property="ca" />
+    <result column="cb" jdbcType="INTEGER" property="cb" />
+    <result column="cc" jdbcType="INTEGER" property="cc" />
+    <result column="cd" jdbcType="INTEGER" property="cd" />
+    <result column="ce" jdbcType="INTEGER" property="ce" />
+    <result column="cf" jdbcType="INTEGER" property="cf" />
+    <result column="da" jdbcType="INTEGER" property="da" />
+    <result column="db" jdbcType="INTEGER" property="db" />
+    <result column="dc" jdbcType="INTEGER" property="dc" />
+    <result column="dd" jdbcType="INTEGER" property="dd" />
+    <result column="de" jdbcType="INTEGER" property="de" />
+    <result column="df" jdbcType="INTEGER" property="df" />
+    <result column="ea" jdbcType="INTEGER" property="ea" />
+    <result column="eb" jdbcType="INTEGER" property="eb" />
+    <result column="ec" jdbcType="INTEGER" property="ec" />
+    <result column="ed" jdbcType="INTEGER" property="ed" />
+    <result column="ee" jdbcType="INTEGER" property="ee" />
+    <result column="ef" jdbcType="INTEGER" property="ef" />
+    <result column="fa" jdbcType="INTEGER" property="fa" />
+    <result column="fb" jdbcType="INTEGER" property="fb" />
+    <result column="fc" jdbcType="INTEGER" property="fc" />
+    <result column="fd" jdbcType="INTEGER" property="fd" />
+    <result column="fe" jdbcType="INTEGER" property="fe" />
+    <result column="ff" jdbcType="INTEGER" property="ff" />
+    <result column="class_name" jdbcType="INTEGER" property="className" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    aa, ab, ac, ad, ae, af, ba, bb, bc, bd, be, bf, ca, cb, cc, cd, ce, cf, da, db,
+    dc, dd, de, df, ea, eb, ec, ed, ee, ef, fa, fb, fc, fd, fe, ff, class_name, status
+   </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.statlog_landsat_satellite
+        where status = 1
+    </select>
+
+</mapper>

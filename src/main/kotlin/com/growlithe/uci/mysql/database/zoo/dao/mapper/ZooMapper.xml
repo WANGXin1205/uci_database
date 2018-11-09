@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.zoo.dao.mapper.ZooMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.zoo.dao.domain.ZooDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="animal_name" jdbcType="VARCHAR" property="animalName" />
+    <result column="hair" jdbcType="INTEGER" property="hair" />
+    <result column="feathers" jdbcType="INTEGER" property="feathers" />
+    <result column="eggs" jdbcType="INTEGER" property="eggs" />
+    <result column="milk" jdbcType="INTEGER" property="milk" />
+    <result column="airborne" jdbcType="INTEGER" property="airborne" />
+    <result column="aquatic" jdbcType="INTEGER" property="aquatic" />
+    <result column="predator" jdbcType="INTEGER" property="predator" />
+    <result column="toothed" jdbcType="INTEGER" property="toothed" />
+    <result column="backbone" jdbcType="INTEGER" property="backbone" />
+    <result column="breathes" jdbcType="INTEGER" property="breathes" />
+    <result column="venomous" jdbcType="INTEGER" property="venomous" />
+    <result column="fins" jdbcType="INTEGER" property="fins" />
+    <result column="legs" jdbcType="INTEGER" property="legs" />
+    <result column="tail" jdbcType="INTEGER" property="tail" />
+    <result column="domestic" jdbcType="INTEGER" property="domestic" />
+    <result column="catsize" jdbcType="INTEGER" property="catsize" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id, <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    animal_name, hair, feathers, eggs, milk, airborne, aquatic, predator, toothed,
+    backbone, breathes, venomous, fins, legs, tail, domestic, catsize, type, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.zoo
+        where status = 1
+    </select>
+
+</mapper>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.nursery.dao.mapper.NurseryMapper">
+    <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.nursery.dao.domain.NurseryDO">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="parents" jdbcType="VARCHAR" property="parents"/>
+        <result column="has_nurs" jdbcType="VARCHAR" property="hasNurs"/>
+        <result column="form" jdbcType="VARCHAR" property="form"/>
+        <result column="children" jdbcType="VARCHAR" property="children"/>
+        <result column="housing" jdbcType="VARCHAR" property="housing"/>
+        <result column="finance" jdbcType="VARCHAR" property="finance"/>
+        <result column="social" jdbcType="VARCHAR" property="social"/>
+        <result column="health" jdbcType="VARCHAR" property="health"/>
+        <result column="class_name" jdbcType="VARCHAR" property="className"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+    </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    parents, has_nurs, form, children, housing, finance, social, health, class_name,
+    status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.nursery
+        where status = 1
+    </select>
+
+</mapper>

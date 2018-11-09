@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.statloggerman.dao.mapper.StatlogGermanCreditMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.statloggerman.dao.domain.StatlogGermanCreditDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="a" jdbcType="INTEGER" property="a" />
+    <result column="b" jdbcType="INTEGER" property="b" />
+    <result column="c" jdbcType="INTEGER" property="c" />
+    <result column="d" jdbcType="INTEGER" property="d" />
+    <result column="e" jdbcType="INTEGER" property="e" />
+    <result column="f" jdbcType="INTEGER" property="f" />
+    <result column="g" jdbcType="INTEGER" property="g" />
+    <result column="h" jdbcType="INTEGER" property="h" />
+    <result column="i" jdbcType="INTEGER" property="i" />
+    <result column="j" jdbcType="INTEGER" property="j" />
+    <result column="k" jdbcType="INTEGER" property="k" />
+    <result column="l" jdbcType="INTEGER" property="l" />
+    <result column="m" jdbcType="INTEGER" property="m" />
+    <result column="n" jdbcType="INTEGER" property="n" />
+    <result column="o" jdbcType="INTEGER" property="o" />
+    <result column="p" jdbcType="INTEGER" property="p" />
+    <result column="q" jdbcType="INTEGER" property="q" />
+    <result column="r" jdbcType="INTEGER" property="r" />
+    <result column="s" jdbcType="INTEGER" property="s" />
+    <result column="t" jdbcType="INTEGER" property="t" />
+    <result column="u" jdbcType="INTEGER" property="u" />
+    <result column="v" jdbcType="INTEGER" property="v" />
+    <result column="w" jdbcType="INTEGER" property="w" />
+    <result column="x" jdbcType="INTEGER" property="x" />
+    <result column="class_name" jdbcType="INTEGER" property="className" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, class_name,
+    status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.statlog_german_credit
+        where status = 1
+    </select>
+</mapper>

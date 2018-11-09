@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.seeds.dao.mapper.SeedsMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.seeds.dao.domain.SeedsDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="area" jdbcType="DECIMAL" property="area" />
+    <result column="perimeter" jdbcType="DECIMAL" property="perimeter" />
+    <result column="compactness" jdbcType="DECIMAL" property="compactness" />
+    <result column="length_of_kernel" jdbcType="DECIMAL" property="lengthOfKernel" />
+    <result column="width_of_kernel" jdbcType="DECIMAL" property="widthOfKernel" />
+    <result column="asymmetry_coefficient" jdbcType="DECIMAL" property="asymmetryCoefficient" />
+    <result column="length_of_kernel_groove" jdbcType="DECIMAL" property="lengthOfKernelGroove" />
+    <result column="class_name" jdbcType="INTEGER" property="className" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    area, perimeter, compactness, length_of_kernel, width_of_kernel, asymmetry_coefficient,
+    length_of_kernel_groove, class_name, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.seeds
+        where status = 1
+    </select>
+
+</mapper>

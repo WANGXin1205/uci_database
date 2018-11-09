@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.letter.dao.mapper.LetterRecognitionMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.letter.dao.domain.LetterRecognitionDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="letter" jdbcType="VARCHAR" property="letter" />
+    <result column="x_box" jdbcType="INTEGER" property="xBox" />
+    <result column="y_box" jdbcType="INTEGER" property="yBox" />
+    <result column="width" jdbcType="INTEGER" property="width" />
+    <result column="high" jdbcType="INTEGER" property="high" />
+    <result column="onpix" jdbcType="INTEGER" property="onpix" />
+    <result column="x_bar" jdbcType="INTEGER" property="xBar" />
+    <result column="y_bar" jdbcType="INTEGER" property="yBar" />
+    <result column="x_to_bar" jdbcType="INTEGER" property="xToBar" />
+    <result column="y_to_bar" jdbcType="INTEGER" property="yToBar" />
+    <result column="xy_bar" jdbcType="INTEGER" property="xyBar" />
+    <result column="x_to_y_br" jdbcType="INTEGER" property="xToYBr" />
+    <result column="xy_to_br" jdbcType="INTEGER" property="xyToBr" />
+    <result column="x_ege" jdbcType="INTEGER" property="xEge" />
+    <result column="xegvy" jdbcType="INTEGER" property="xegvy" />
+    <result column="y_ege" jdbcType="INTEGER" property="yEge" />
+    <result column="yegvx" jdbcType="INTEGER" property="yegvx" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id, <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    letter, x_box, y_box, width, high, onpix, x_bar, y_bar, x_to_bar, y_to_bar, xy_bar,
+    x_to_y_br, xy_to_br, x_ege, xegvy, y_ege, yegvx, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.letter_recognition
+        where status = 1
+    </select>
+
+</mapper>
