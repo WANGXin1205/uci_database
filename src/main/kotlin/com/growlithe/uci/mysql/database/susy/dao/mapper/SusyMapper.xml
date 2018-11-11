@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.susy.dao.mapper.SusyMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.susy.dao.domain.SusyDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="class_name" jdbcType="INTEGER" property="className" />
+    <result column="a_a" jdbcType="DECIMAL" property="aA" />
+    <result column="a_b" jdbcType="DECIMAL" property="aB" />
+    <result column="a_c" jdbcType="DECIMAL" property="aC" />
+    <result column="a_d" jdbcType="DECIMAL" property="aD" />
+    <result column="a_e" jdbcType="DECIMAL" property="aE" />
+    <result column="a_f" jdbcType="DECIMAL" property="aF" />
+    <result column="a_g" jdbcType="DECIMAL" property="aG" />
+    <result column="a_h" jdbcType="DECIMAL" property="aH" />
+    <result column="b_a" jdbcType="DECIMAL" property="bA" />
+    <result column="b_b" jdbcType="DECIMAL" property="bB" />
+    <result column="b_c" jdbcType="DECIMAL" property="bC" />
+    <result column="b_d" jdbcType="DECIMAL" property="bD" />
+    <result column="b_e" jdbcType="DECIMAL" property="bE" />
+    <result column="b_f" jdbcType="DECIMAL" property="bF" />
+    <result column="b_g" jdbcType="DECIMAL" property="bG" />
+    <result column="b_h" jdbcType="DECIMAL" property="bH" />
+    <result column="b_i" jdbcType="DECIMAL" property="bI" />
+    <result column="b_j" jdbcType="DECIMAL" property="bJ" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+    class_name, a_a, a_b, a_c, a_d, a_e, a_f, a_g, a_h, b_a, b_b, b_c, b_d, b_e,
+    b_f, b_g, b_h, b_i, b_j, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.susy
+        where status = 1
+    </select>
+
+</mapper>

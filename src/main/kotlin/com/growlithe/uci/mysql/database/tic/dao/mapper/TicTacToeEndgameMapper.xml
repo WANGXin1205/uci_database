@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.growlithe.uci.mysql.database.tic.dao.mapper.TicTacToeEndgameMapper">
+  <resultMap id="BaseResultMap" type="com.growlithe.uci.mysql.database.tic.dao.domain.TicTacToeEndgameDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="a_a" jdbcType="VARCHAR" property="aA" />
+    <result column="a_b" jdbcType="VARCHAR" property="aB" />
+    <result column="a_c" jdbcType="VARCHAR" property="aC" />
+    <result column="b_a" jdbcType="VARCHAR" property="bA" />
+    <result column="b_b" jdbcType="VARCHAR" property="bB" />
+    <result column="b_c" jdbcType="VARCHAR" property="bC" />
+    <result column="c_a" jdbcType="VARCHAR" property="cA" />
+    <result column="c_b" jdbcType="VARCHAR" property="cB" />
+    <result column="c_c" jdbcType="VARCHAR" property="cC" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+    <sql id="base_property">
+        id,
+        <include refid="save_property"/>
+    </sql>
+    <sql id="save_property">
+     a_a, a_b, a_c, b_a, b_b, b_c, c_a, c_b, c_c, class_name, status
+    </sql>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        select
+        <include refid="base_property"/>
+        from uci_database.tic_tac_toe_endgame
+        where status = 1
+    </select>
+
+</mapper>
