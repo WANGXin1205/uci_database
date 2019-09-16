@@ -16,3 +16,5 @@
 ## 未来计划   
 1.筛选数据集导入mysql，给出init，仅仅是结构，对于特大型的数据集，不给cvs，给出url。
 2.建立DO，写一个通用算法，可以计算分类属性数目。
+
+this project discard, we can lead in database by .cvs or .xls and navicat tools 
